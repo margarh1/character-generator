@@ -1,0 +1,8 @@
+<h1>Log In</h1>
+
+<%= form_for :user, class: 'form-control' do |f| %>
+  Username: <%= f.text_field :username, class: 'inline-form' %><br>
+  Password: <%= f.password_field :password, class: 'inline-form' %><br>
+  <%= f.submit("Log In", class: 'btn btn-success') %>
+<% end %>
+New? Sign up <%= link_to "here", signup_path %>.
