@@ -1,0 +1,76 @@
+{
+  "skills": [
+    {
+      "name": "Acrobatics",
+      "trait": "Dexterity"
+    },
+    {
+      "name": "Animal Handling",
+      "trait": "Wisdom"
+    },
+    {
+      "name": "Arcana",
+      "trait": "Intelligence"
+    },
+    {
+      "name": "Athletics",
+      "trait": "Strength"
+    },
+    {
+      "name": "Deception",
+      "trait": "Charisma"
+    },
+    {
+      "name": "History",
+      "trait": "Intelligence"
+    },
+    {
+      "name": "Insight",
+      "trait": "Wisdom"
+    },
+    {
+      "name": "Intimidation",
+      "trait": "Charisma"
+    },
+    {
+      "name": "Investigation",
+      "trait": "Intelligence"
+    },
+    {
+      "name": "Medicine",
+      "trait": "Wisdom"
+    },
+    {
+      "name": "Nature",
+      "trait": "Intelligence"
+    },
+    {
+      "name": "Perception",
+      "trait": "Wisdom"
+    },
+    {
+      "name": "Performance",
+      "trait": "Charisma"
+    },
+    {
+      "name": "Persuasion",
+      "trait": "Charisma"
+    },
+    {
+      "name": "Religion",
+      "trait": "Intelligence"
+    },
+    {
+      "name": "Sleight of Hand",
+      "trait": "Dexterity"
+    },
+    {
+      "name": "Stealth",
+      "trait": "Dexterity"
+    },
+    {
+      "name": "Survival",
+      "trait": "Wisdom"
+    }
+  ]
+}

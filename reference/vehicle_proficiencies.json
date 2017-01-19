@@ -1,0 +1,22 @@
+{
+  "vehicle proficiencies": {
+    "land": [
+      "Camel",
+      "Donkey/Mule",
+      "Elephant",
+      "Horse, draft",
+      "Horse, riding",
+      "Mastiff",
+      "Pony",
+      "Warhorse"
+    ],
+    "water": [
+      "Galley",
+      "Keelboat",
+      "Longship",
+      "Rowboat",
+      "Sailing Ship",
+      "Warship"
+    ]
+  }
+}

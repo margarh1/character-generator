@@ -1,0 +1,28 @@
+{
+  "language proficiencies": {
+    "standard": [
+      "Common",
+      "Dwarvish",
+      "Elvish",
+      "Giant",
+      "Gnomish",
+      "Goblin",
+      "Halfling",
+      "Orc"
+    ],
+    "exotic": [
+      "Abyssal",
+      "Celestial",
+      "Draconic",
+      "Deep Speech",
+      "Infernal",
+      "Primordial - All",
+      "Primordial - Auran",
+      "Primordial - Terran",
+      "Primoridal - Ignan",
+      "Primoridal - Aquan",
+      "Sylvan",
+      "Undercommon"
+    ]
+  }
+}

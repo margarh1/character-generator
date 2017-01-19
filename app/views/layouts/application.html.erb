@@ -12,11 +12,11 @@
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="nav-container container-fluid">
         <% if current_user %>
-          <%= link_to "Log Out", logout_path, class: 'btn btn-info nav nav-btn pull-right' %>
-          <%= link_to "Profile", profile_path, class: 'btn btn-info nav nav-btn pull-right' %>
+          <%= link_to "Log Out", logout_path, class: 'btn btn-info navbar-btn pull-right' %>
+          <%= link_to "Profile", profile_path, class: 'btn btn-info navbar-btn pull-right' %>
         <% elsif !current_page?(login_path) && !current_page?(signup_path) %>
-          <%= link_to "Sign Up", signup_path, class: 'btn btn-info nav nav-btn pull-right' %>
-          <%= link_to "Log In", login_path, class: 'btn btn-info nav nav-btn pull-right' %>
+          <%= link_to "Sign Up", signup_path, class: 'btn btn-info navbar-btn pull-right' %>
+          <%= link_to "Log In", login_path, class: 'btn btn-info navbar-btn pull-right' %>
         <% end %>
       </div>
     </div>
