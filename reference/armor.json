@@ -1,0 +1,89 @@
+{
+  "armor": {
+    "light": {
+      "padded": {
+        "cost": 5,
+        "armor class": "11 + Dex mod",
+        "stealth": "Disadvantage",
+        "weight": 8
+      },
+      "leather": {
+        "cost": 10,
+        "armor class": "11 + Dex mod",
+        "weight": 10
+      },
+      "studded leather": {
+        "cost": 45,
+        "armor class": "12 + Dex mod",
+        "weight": 13
+      }
+    },
+    "medium": {
+      "hide": {
+        "cost": 10,
+        "armor class": "12 + Dex mod",
+        "max armor class": 14,
+        "weight": 12
+      },
+      "chain shirt": {
+        "cost": 50,
+        "armor class": "13 + Dex mod",
+        "max armor class": 15,
+        "weight": 20
+      },
+      "scale mail": {
+        "cost": 50,
+        "armor class": "14 + Dex mod",
+        "max armor class": 16,
+        "stealth": "Disadvantage",
+        "weight": 45
+      },
+      "breastplate": {
+        "cost": 400,
+        "armor class": "14 + Dex mod",
+        "max armor class": 16,
+        "weight": 20
+      },
+      "half plate": {
+        "cost": 750,
+        "armor class": "15 + Dex mod",
+        "max armor class": 17,
+        "stealth": "Disadvantage",
+        "weight": 40
+      }
+    },
+    "heavy": {
+      "ring mail": {
+        "cost": 30,
+        "armor class": 14,
+        "stealth": "Disadvantage",
+        "weight": 40
+      },
+      "chain mail": {
+        "cost": 75,
+        "armor class": 16,
+        "strength": 13,
+        "stealth": "Disadvantage",
+        "weight": 55
+      },
+      "splint": {
+        "cost": 200,
+        "armor class": 17,
+        "strength": 15,
+        "stealth": "Disadvantage",
+        "weight": 60
+      },
+      "plate": {
+        "cost": 1500,
+        "armor class": 18,
+        "strength": 15,
+        "stealth": "Disadvantage",
+        "weight": 65
+      }
+    },
+    "shield": {
+      "cost": 10,
+      "armor class": 2
+    }
+  }
+}

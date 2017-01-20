@@ -1,0 +1,116 @@
+{
+  "weapons": {
+    "simple melee": {
+      "Club": {
+        "cost": "1 sp",
+        "damage": "1d4 bludgeoning",
+        "weight": 2,
+        "properties": "Light"
+      },
+      "Dagger": {
+        "cost": "2 gp",
+        "damage": "1d4 piercing",
+        "weight": 1,
+        "properties": [
+          "Finesse",
+          "Light",
+          "Thrown (range 20/60)"
+        ]
+      },
+      "Greatclub": {
+        "cost": "2 sp",
+        "damage": "1d8 bludgeoning",
+        "weight": 10,
+        "properties": "Two-handed"
+      },
+      "Handaxe": {
+        "cost": "5 gp",
+        "damage": "1d6 slashing",
+        "weight": 2,
+        "properties": [
+          "Light",
+          "Thrown (range 20/60)"
+        ]
+      },
+      "Javelin": {
+        "cost": "5 sp",
+        "damage": "1d6 piercing",
+        "weight": 2,
+        "properties": "Thrown (range 30/120)"
+      },
+      "Light hammer": {
+        "cost": "2 gp",
+        "damage": "1d4 bludgeoning",
+        "weight": 2,
+        "properties": [
+          "Light",
+          "Thrown (range 20/60)"
+        ]
+      },
+      "Mace": {
+        "cost": "5 gp",
+        "damage": "1d6 bludgeoning",
+        "weight": 4
+      },
+      "Quarterstaff": {
+        "cost": "2 sp",
+        "damage": "1d6 bludgeoning",
+        "weight": 4,
+        "properties": "Versatile (1d8)"
+      },
+      "Sickle": {
+        "cost": "1 gp",
+        "damage": "1d4 slashing",
+        "weight": 2,
+        "properties": "Light"
+      },
+      "Spear": {
+        "cost": "1 gp",
+        "damage": "1d6 piercing",
+        "weight": 3,
+        "properties": [
+          "Thrown (range 20/60)",
+          "Versatile (1d8)"
+        ]
+      },
+      "Unarmed strike": {
+        "damage": "1 bludgeoning"
+      }
+    },
+    "simple ranged": {
+      "Crossbow, light": {
+        "cost": "25 gp",
+        "damage": "1d8 piercing",
+        "weight": 5,
+        "properties": [
+          "Ammunition (range 80/320)",
+          "Loading",
+          "Two-handed"
+        ]
+      },
+      "Dart": {
+        "cost": "5 cp",
+        "damage": "1d4 piercing",
+        "weight": 0.25,
+        "properties": [
+          "Finesse",
+          "Thrown (range 20/60)"
+        ]
+      },
+      "Shortbow": {
+        "cost": "25 gp",
+        "damage": "1d6 piercing",
+        "weight": 2,
+        "properties": [
+          "Ammunition (range 80/320)",
+          "Two-handed"
+        ]
+      },
+      "Sling": {
+        "cost": "1 sp",
+        "damage": "1d4 bludgeoning",
+        "properties": "Ammunition (range 30/120)"
+      }
+    }
+  }
+}

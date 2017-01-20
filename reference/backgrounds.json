@@ -16,8 +16,7 @@
       ],
       "gp": 15,
       "feature": {
-        "title": "Shelter of the Faithful",
-        "summary": "You and your party receive free healing and care at a temple, shrine, or other established presence of your faith."
+        "Shelter of the Faithful": "You and your party receive free healing and care at a temple, shrine, or other established presence of your faith."
       },
       "personality traits": [
         "I idolize a particular hero of my faith, and constantly refer to that person's deeds and example.",
@@ -79,8 +78,7 @@
         "I convince people that worthless junk is worth their hard-earned money."
       ],
       "feature": {
-        "title": "False Identity",
-        "summary": "You have a second identity that includes documents, established acquaintances, and disguises that allow you to assume that persona. You can also forge documents including official papers and personal letters, so long as you have seen an example of the document or handwriting you are trying to forge."
+        "False Identity": "You have a second identity that includes documents, established acquaintances, and disguises that allow you to assume that persona. You can also forge documents including official papers and personal letters, so long as you have seen an example of the document or handwriting you are trying to forge."
       },
       "personality traits": [
         "I fall in and out of love easily, and am always pursuing someone.",
@@ -144,8 +142,7 @@
         "Spy (Variant)"
       ],
       "feature": {
-        "title": "Criminal Contact",
-        "summary": "You have a reliable and trustworthy contact who acts as your liason to a network of other criminals. You know how to get messages to and from your contact, even over great distances."
+        "Criminal Contact": "You have a reliable and trustworthy contact who acts as your liason to a network of other criminals. You know how to get messages to and from your contact, even over great distances."
       },
       "personality trait": [
         "I always have a plan for what to do when things go wrong.",
@@ -192,10 +189,11 @@
         "Instrument"
       ],
       "equipment": [
-        "A musical instrument (choose one) | Inexpensive but unsual weapon",
+        "A musical instrument (choose one)",
         "The favor of an admirer (love letter, lock of hair, or trinket)",
         "A costume",
-        "Belt pouch"
+        "Belt pouch",
+        "Inexpensive but unsual weapon (Gladiator)"
       ],
       "gp": 15,
       "routines": [
@@ -212,8 +210,7 @@
         "Gladiator (Variant)"
       ],
       "feature": {
-        "title": "By Popular Demand",
-        "summary": "You can always find a place to perform, where you will receive free lodging and food, as long as you perform each night."
+        "By Popular Demand": "You can always find a place to perform, where you will receive free lodging and food, as long as you perform each night."
       },
       "personality trait": [
         "I know a story relevant to almost every situation.",
@@ -280,8 +277,7 @@
         "Recruited into a lord's army, I rose to leadership and was commended for my heroism."
       ],
       "feature": {
-        "title": "Rustic Hospitality",
-        "summary": "You can find a place to hide, rest, or recuperate among other commoners, unless you have shown yourself to be a danger to them. They can shield you from the law or anyone else searching for you, though they will not risk their lives for you."
+        "Rustic Hospitality": "You can find a place to hide, rest, or recuperate among other commoners, unless you have shown yourself to be a danger to them. They can shield you from the law or anyone else searching for you, though they will not risk their lives for you."
       },
       "personality trait": [
         "I judge people by their actions, not their words.",
@@ -323,13 +319,20 @@
         "Insight",
         "Persuasion"
       ],
-      "tools": "Artisan's tools (choose one) | Navigator's tools",
-      "languages": "1 | 2",
+      "tools": [
+        "Artisan's tools (choose one)",
+        "Navigator's tools (Guild merchant)"
+      ],
+      "languages": [
+        1,
+        2
+      ],
       "equipment": [
-        "Artisan's tools (choose one) | Mule and cart",
+        "Artisan's tools (choose one)",
         "A letter of introduction from your guild",
         "A set of traveler's clothes",
-        "Belt pouch"
+        "Belt pouch",
+        "Mule and cart (Guild merchant)"
       ],
       "gp": 15,
       "guild business": [
@@ -356,8 +359,7 @@
         "Guild merchant (Variant)"
       ],
       "feature": {
-        "title": "Guild Membership",
-        "summary": "Your fellow guild members will provide you with food and lodging if necessary. They will also support you if you are accused of a crime and a good case can be made for your innocence or your crime is justifiable. You also gain access to powerful political figures, if you are a member in good standing. You must pay dues of 5 gp per month to the guild."
+        "Guild Membership": "Your fellow guild members will provide you with food and lodging if necessary. They will also support you if you are accused of a crime and a good case can be made for your innocence or your crime is justifiable. You also gain access to powerful political figures, if you are a member in good standing. You must pay dues of 5 gp per month to the guild."
       },
       "personality trait": [
         "I believe that anything worth doing is worth doing right. I can't help it--I'm a perfectionist.",
@@ -392,6 +394,427 @@
         "I'm never satisfied with what I have--I always want more.",
         "I would kill to acquire a noble title.",
         "I'm horribly jealous of anyone who can outshine my handiwork. Everywhere I go, I'm surrounded by rivals."
+      ]
+    },
+    "Hermit": {
+      "skills": [
+        "Medicine",
+        "Religion"
+      ],
+      "tools": "Herbalism Kit",
+      "languages": 1,
+      "equipment": [
+        "A scroll case stuffed full of notes from your studies or prayers",
+        "A winter blanket",
+        "A set of common clothes",
+        "Herbalism kit"
+      ],
+      "gp": 5,
+      "reason for hiding": [
+        "I was searching for spiritual enlightenment.",
+        "I was partaking of communal living in accordance with the dictates of a religious order.",
+        "I was exiled for a crime I didn't commit.",
+        "I retreated from society after a life-altering event.",
+        "I needed a quiet place to work on my art, literature, music, or manifesto.",
+        "I needed to commune with nature, far from civilization.",
+        "I was the caretaker of an ancient ruin or relic.",
+        "I was a pilgrim in search of a person, place, or relic of spiritual significance."
+      ],
+      "feature": {
+        "Discovery": "You discovered something unique and/or powerful about the world during your hermitage."
+      },
+      "personality trait": [
+        "I've been isolated for so long that I rarely speak, preferring gestures and the occasional grunt.",
+        "I am utterly serene, even in the face of disaster.",
+        "The leader of my community had something wise to say on every topic, and I am eager to share that wisdom.",
+        "I feel tremendous empathy for all who suffer.",
+        "I'm oblivious to etiquette and social expectations.",
+        "I connect everything that happens to me to a grand, cosmic plan.",
+        "I often get lost in my own thoughts and contemplation, becoming oblivious to my surroundings.",
+        "I am working on a grand philosophical theory and love sharing my ideas."
+      ],
+      "ideal": [
+        "**Greater Good.** My gifts are meant to be shared with all, not used for my own benefit. (Good)",
+        "**Logic.** Emotions must not cloud our sense of what is right and true, or our logical thinking. (Lawful)",
+        "**Free Thinking.** Inquiry and curiosity are the pillars of progress. (Chaotic)",
+        "**Power.** Solitude and contemplation are paths toward mystical or magical power. (Evil)",
+        "**Live and Let Live.** Meddling in the affairs of others only causes trouble. (Neutral)",
+        "**Self-Knowledge.** If you know yourself, there's nothing left to know. (Any)"
+      ],
+      "bond": [
+        "Nothing is more important than the other members of my hermitage, order, or association.",
+        "I entered seclusion to hide from the ones who might still be hunting me. I must someday confront them.",
+        "I'm still seeking the enlightenment I pursued in my seclusion, and it still eludes me.",
+        "I entered seclusion because I loved someone I could not have.",
+        "Should my discovery come to light, it could bring ruin to the world.",
+        "My isolation gave me great insight into a great evil that only I can destroy."
+      ],
+      "flaw": [
+        "Now that I've returned to the world, I enjoy its delights a little too much.",
+        "I harbor dark, bloodthirsty thoughts that my isolation and meditation failed to quell.",
+        "I am dogmatic in my thoughts and philosophy.",
+        "I let my need to win arguments overshadow friendships and harmony.",
+        "I'd risk too much to uncover a lost bit of knowledge.",
+        "I like keeping secrets and won't share them with anyone."
+      ]
+    },
+    "Noble/Knight(Variant)": {
+      "skills": [
+        "History",
+        "Persuasion"
+      ],
+      "tools": "Gaming Set (choose one)",
+      "languages": 1,
+      "equipment": [
+        "A set of fine clothes",
+        "A signet ring",
+        "A scroll of pedigree",
+        "Purse",
+        "Token from a noble lord or lady to whom you have given your heart"
+      ],
+      "gp": 25,
+      "feature": {
+        "Position of Privilege": "People are inclined to think the best of you because of your noble birth.",
+        "Retainers": "You have the service of 3 retainers loyal to your family. They can perform mundane tasks for you, but they do not fight for you, will not follow you into obviously dangerous areas, and will leave if they are frequently endangered or abused."
+      },
+      "personality trait": [
+        "My eloquent flattery makes everyone I talk to feel like the most wonderful and important person in the world.",
+        "The common folk love me for my kindness and generosity.",
+        "No one could doubt by looking at my regal bearing that I am a cut above the unwashed masses.",
+        "I take great pains to always look my best and follow the latest fashions.",
+        "I don't like to get my hands dirty, and I won't be caught dead in unsuitable accommodations.",
+        "Despite my noble birth, I do not place myself above other folk. We all have the same blood.",
+        "My favor, once lost, is lost forever.",
+        "If you do me an injury, I will crush you, ruin your name, and salt your fields."
+      ],
+      "ideal": [
+        "**Respect.** Respect is due to me because of my position, but all people regardless of station deserve to be treated with dignitiy. (Good)",
+        "**Responsibility.** It is my duty to respect the authority of those above me, just as those below me must respect mine. (Lawful)",
+        "**Independence.** I must prove that I can handle myself without the coddling of my family. (Chaotic)",
+        "**Power.** If I can attain more power, no one will tell me what to do. (Evil)",
+        "**Family.** Blood runs thicker than water. (Any)",
+        "**Noble Obligation.** It is my duty to protect and care for the people beneath me. (Good)"
+      ],
+      "bond": [
+        "I will face any challenge to win the approval of my family.",
+        "My house's alliance with another noble family must be sustained at all costs.",
+        "Nothing is more important than the other members of my family.",
+        "I am in love with the heir of a family that my family despises.",
+        "My loyalty to my sovereign is unwavering.",
+        "The common folk must see me as a hero of the people."
+      ],
+      "flaw": [
+        "I secretly believe that everyone is beneath me.",
+        "I hide a truly scandalous secret that could ruin my family forever.",
+        "I too often hear veiled insults and threats in every word addressed to me, and I'm quick to anger.",
+        "I have the insatiable desire for carnal pleasures.",
+        "In fact, the world does revolved around me.",
+        "By my words and actions, I often bring shame to my family."
+      ]
+    },
+    "Outlander": {
+      "skills": [
+        "Athletics",
+        "Survival"
+      ],
+      "tools": "Instrument (choose one)",
+      "languages": 1,
+      "equipment": [
+        "A staff",
+        "A hunting trap",
+        "A trophy from an animal you killed",
+        "A set of traveler's clothes",
+        "Belt pouch"
+      ],
+      "gp": 10,
+      "origin": [
+        "Forester",
+        "Trapper",
+        "Homesteader",
+        "Guide",
+        "Exile or outcast",
+        "Bounty hunter",
+        "Pilgrim",
+        "Tribal nomad",
+        "Hunter-gatherer",
+        "Tribal marauder"
+      ],
+      "feature": {
+        "Wanderer": "You have an excellent memory for maps and geography, and you can always recall the general layout of terrain, settlements, and other features around you. You can find food and fresh water for yourself and up to 5 other people each day, provided the land offers berries, small game, water, and so forth."
+      },
+      "personality trait": [
+        "I'm driven by wanderlust that led me away from home.",
+        "I watch over my friends as if they were a litter of newborn pups.",
+        "I once ran twenty-five miles without stopping to warn my clan of an approaching orc horde. I'd do it again if I had to.",
+        "I have a lesson for every situation, drawn from observing nature.",
+        "I place no stock in wealthy or well-mannered folk. Money and manners won't save you from a hungry owlbear.",
+        "I'm always picking things up, absently fiddling with them, and sometimes accidentally breaking them.",
+        "I feel far more comfortable around animals than people.",
+        "I was, in fact, raised by wolves."
+      ],
+      "ideal": [
+        "**Change.** Life is like the seasons, in constant change, and we must change with it. (Chaotic)",
+        "**Greater Good.** It is each person's responsibility to make the most happiness for the whole tribe. (Good)",
+        "**Honor.** If I dishonor myself, I dishonor my whole clan. (Lawful)",
+        "**Might.** The strongest are meant to rule. (Evil)",
+        "**Nature.** The natural world is more important than all the constructs of civilization. (Neutral)",
+        "**Glory.** I must earn glory in battle, for myself and my clan. (Any)"
+      ],
+      "bond": [
+        "My family, clan, or tribe is the most important thing in my life, even when they are far from me.",
+        "An injury to the unspoiled wilderness of my home is an injury to me.",
+        "I will bring terrible wrath down on the evildoers who destroyed my homeland.",
+        "I am the last of my tribe, and it is up to me to ensure their names enter legend.",
+        "I suffer awful visions of a coming disaster and will do anything to prevent it.",
+        "It is my duty to provide children to sustain my tribe."
+      ],
+      "flaw": [
+        "I am too enamored of ale, wine, and other intoxicants.",
+        "There's no room for caution in a life lived to the fullest.",
+        "I remember every insult I've received and nurse a silent resentment toward anyone who's ever wronged me.",
+        "I am slow to trust members of other races, tribes, and societies.",
+        "Violence is my answer to almost any challenge.",
+        "Don't expect me to save those who can't save themselves. It is nature's way that the strong thrive and the weak perish."
+      ]
+    },
+    "Sage": {
+      "skills": [
+        "Arcana",
+        "History"
+      ],
+      "languages": 2,
+      "equipment": [
+        "A bottle of black ink",
+        "A quill",
+        "A small knife",
+        "A letter from a dead colleague posing a question you have not yet been able to answer",
+        "A set of common clothes",
+        "Belt pouch"
+      ],
+      "gp": 10,
+      "specialty": [
+        "Alchemist",
+        "Astronomer",
+        "Discredited academic",
+        "Librarian",
+        "Professor",
+        "Researcher",
+        "Wizard's apprentice",
+        "Scribe"
+      ],
+      "feature": {
+        "Researcher": "When attempting to learn or recall a piece of lore, if you don't know that information, you often know where and from whom you can obtain it."
+      },
+      "personality trait": [
+        "I use polysyllabic words that convey the impression of great erudition.",
+        "I've read every book in the world's greatest libraries--or I like to boast that I have.",
+        "I'm used to helping out those who aren't as smart as I am, and I patiently explain anything and everything to others.",
+        "There's nothing I like more than a good mystery.",
+        "I'm willing to listen to every side of an argument before I make my own judgment.",
+        "I...speak...slowly...when talking...to idiots...which...almost...everyone...is...compared...to me.",
+        "I am horribly, horribly awkward in social situations.",
+        "I'm convinced that people are always trying to steal my secrets."
+      ],
+      "ideal": [
+        "**Knowledge.** The path to power and self-improvement is through knowledge. (Neutral)",
+        "**Beauty.** What is beautiful points us beyond itself toward what is true. (Good)",
+        "**Logic.** Emotions must not cloud our logical thinking. (Lawful)",
+        "**No Limits.** Nothing should fetter the infinite possibility inherent in all existence. (Chaotic)",
+        "**Power.** Knowledge is the path to power and domination. (Evil)",
+        "**Self-Improvement.** The goal of a life of study is the betterment of oneself. (Any)"
+      ],
+      "bond": [
+        "It is my duty to protect my students.",
+        "I have an ancient text that holds terrible secrets that must not fall into the wrong hands.",
+        "I work to preserve a library, university, scriptorium, or monastery.",
+        "My life's work is a series of tomes related to a specific field of lore.",
+        "I've been searching my whole life for the answer to a certain question.",
+        "I sold my soul for knowledge. I hope to do great deeds and win it back."
+      ],
+      "flaw": [
+        "I am easily distracted by the promise of information.",
+        "Most people scream and run when they see a demon. I stop and take notes on its anatomy.",
+        "Unlocking an ancient mystery is worth the price of a civilization.",
+        "I overlook obvious solutions in favor of complicated ones.",
+        "I speak without really thinking through my words, invariably insulting others.",
+        "I can't keep a secret to save my life, or anyone else's."
+      ]
+    },
+    "Sailor/Pirate(Variant)": {
+      "skills": [
+        "Athletics",
+        "Perception"
+      ],
+      "tools": [
+        "Navigator's tools",
+        "Vehicles (water)"
+      ],
+      "equipment": [
+        "A belaying pin (club)",
+        "50 feet of silk rope",
+        "A lucky charm such as a rabbit foot or a small stone with a hole in the center (or you may pick a random Trinket)",
+        "A set of common clothes",
+        "Belt pouch"
+      ],
+      "gp": 10,
+      "feature": {
+        "Ship's Passage": "You can secure free passage on a sailing ship for yourself and your party, but all of you are expected to assist the crew during the voyage.",
+        "Bad Reputation": "People are afraid of you due to your reputation. You can get away with minor criminal offenses."
+      },
+      "personality trait": [
+        "My friends know they can rely on me, no matter what.",
+        "I work hard so that I can play hard when the work is done.",
+        "I enjoy sailing into new ports and making new friends over a flagon of ale.",
+        "I stretch the truth for the sake of a good story.",
+        "To me, a tavern brawl is a nice way to get to know a new city.",
+        "I never pass up a friendly wager.",
+        "My language is as foul as an otyugh nest.",
+        "I like a job well done, especially if I can convince someone else to do it."
+      ],
+      "ideal": [
+        "**Respect.** The thing that keeps a ship together is mutual respect between captain and crew. (Good)",
+        "**Fairness.** We all do the work, so we all share in the rewards. (Lawful)",
+        "**Freedom.** The sea is freedom--the freedom to go anywhere and do anything. (Chaotic)",
+        "**Mastery.** I'm a predator, and the other ships on the sea are my prey. (Evil)",
+        "**People.** I'm committed to my crewmates, not to ideasl. (Neutral)",
+        "**Aspiration.** Someday I'll own my own ship and chart my own destiny. (Any)"
+      ],
+      "bond": [
+        "I'm loyal to my captain first, everything else second.",
+        "The ship is most important--crewmates and captains come and go.",
+        "I'll always remember my first ship.",
+        "In a harbor town, I have a paramour whose eyes nearly stole me from the sea.",
+        "I was cheated out of my fair share of the profits, and I want to get my due.",
+        "Ruthless pirates murdered my captain and crewmates, plundered our ship, and left me to die. Vengeance will be mine."
+      ],
+      "flaw": [
+        "I follow orders, even if I think they're wrong.",
+        "I'll say anything to avoid having to do extra work.",
+        "Once someone questions my courage, I never back down no matter how dangerous the situation.",
+        "Once I start drinking, it's hard for me to stop.",
+        "I can't help but pocket loose coins and other trinkets I come across.",
+        "My pride will probably lead to my destruction."
+      ]
+    },
+    "Soldier": {
+      "skills": [
+        "Athletics",
+        "Intimidation"
+      ],
+      "tools": [
+        "Gaming set (choose one)",
+        "Vehicles (land)"
+      ],
+      "equipment": [
+        "An insignia of rank",
+        "A trophy taken from a fallen enemy (a dagger, broken blade, or piece of a banner)",
+        "A set of bone dice or deck of cards",
+        "A set of common clothes",
+        "Belt pouch"
+      ],
+      "gp": 10,
+      "specialty": [
+        "Officer",
+        "Scout",
+        "Infantry",
+        "Cavalry",
+        "Healer",
+        "Quartermaster",
+        "Standard bearer",
+        "Support staff (cook, blacksmith, or the like)"
+      ],
+      "feature": {
+        "Military Rank": "You have authority and influence with soldiers loyal to your (former) military organization. You can requisition simple equipment or horses for temporary use. You can usually gain access to friendly military encampments and fortresses where you rank is recognized."
+      },
+      "personality trait": [
+        "I'm always polite and respectful.",
+        "I'm haunted by memories of war. I can't get the images of violence out of my mind.",
+        "I've lost too many friends, and I'm slow to make new ones.",
+        "I'm full of inspiring and cautionary tales from my military experience relevant to almost every combat situation.",
+        "I can stare down a hell hound without flinching.",
+        "I enjoy being strong and like breaking things.",
+        "I have a crude sense of humor.",
+        "I face problems head-on. A simple, direct solution is the best path to success."
+      ],
+      "ideal": [
+        "**Greater Good.** Our lot is to lay down our lives in defense of others. (Good)",
+        "**Responsibility.** I do what I must and obey just authority. (Lawful)",
+        "**Independence.** When people follow orders blindly, they embrace a kind of tyranny. (Chaotic)",
+        "**Might.** In life as in war, the strong force wins. (Evil)",
+        "**Live and Let Live.** Ideals aren't worth killing over or going to war for. (Neutral)",
+        "**Nation.** My city, nation, or people are all that matter. (Any)"
+      ],
+      "bond": [
+        "I would still lay down my life for the people I served with.",
+        "Someone saved my life on the battlefield. To this day, I will never leave a friend behind.",
+        "My honor is my life.",
+        "I'll never forget the crushing defeat my company suffered or the enemies who dealt it.",
+        "Those who fight beside me are those worth dying for.",
+        "I fight for those who cannot fight for themselves."
+      ],
+      "flaw": [
+        "The monstrous enemy we faced in battle sill leaves me quivering with fear.",
+        "I have little respect for anyone who is not a proven warrior.",
+        "I made a terrible mistake in battle cost many lives--and I would do anything to keep that mistake secret.",
+        "My hatred of my enemies is blind and unreasoning.",
+        "I obey the law, even if the law causes misery.",
+        "I'd rather eat my armor than admit when I'm wrong."
+      ]
+    },
+    "Urchin": {
+      "skills": [
+        "Sleight of Hand",
+        "Stealth"
+      ],
+      "tools": [
+        "Disguise kit",
+        "Thieves' tools"
+      ],
+      "equipment": [
+        "A small knife",
+        "A map of the city you grew up in",
+        "A pet mouse",
+        "A token to remember your parents by",
+        "A set of common clothes",
+        "Belt pouch"
+      ],
+      "gp": 10,
+      "feature": {
+        "City Secrets": "When you are not in combat, you can lead you party between any two locations in a city twice as fast as you speed would normally allow."
+      },
+      "personality trait": [
+        "I hide scraps of food and trinkets away in my pockets.",
+        "I ask a lot of questions.",
+        "I like to squeeze into small places where no one else can get to me.",
+        "I sleep with my back to a wall or tree, with everything I own wrapped in a bundle in my arms.",
+        "I eat like a pig and have bad manners.",
+        "I think anyone who's nice to me is hiding evil intent.",
+        "I don't like to bathe.",
+        "I bluntly say what other people are hinting at or hiding."
+      ],
+      "ideal": [
+        "**Respect.** All people, rich or poor, deserve respect. (Good)",
+        "**Community.** We have to take care of each other, because no one else is going to do it. (Lawful)",
+        "**Change.** The low are lifted up, and the high and mighty are brought down. Change is the nature of things. (Chaotic)",
+        "**Retribution.** The rich need to be shown what life and death are like in the gutters. (Evil)",
+        "**People.** I help the people who help me--that's what keeps us alive. (Neutral)",
+        "**Aspiration.** I'm going to prove that I'm worthy of a better life."
+      ],
+      "bond": [
+        "My town or city is my home, and I'll fight to defend it.",
+        "I sponsor an orphanage to keep others from enduring what I was forced to endure.",
+        "I owe my survival to another urchin who taught me to live on the streets.",
+        "I owe a debt I can never repay to the person who took pity on me.",
+        "I escaped my life of poverty by robbing an important person, and I'm wanted for it.",
+        "No one else should have to endure the hardships I've been through."
+      ],
+      "flaw": [
+        "If I'm outnumbered, I will run away from a fight.",
+        "Gold seems like a lot of money to me, and I'll do just about anything for more of it.",
+        "I will never fully trust anyone other than myself.",
+        "I'd rather kill someone in their sleep then fight fair.",
+        "It's not stealing if I need it more than someone else.",
+        "People who can't take care of themselves get what they deserve."
       ]
     }
   }

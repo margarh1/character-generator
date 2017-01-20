@@ -1,76 +1,58 @@
 {
   "skills": [
     {
-      "name": "Acrobatics",
-      "trait": "Dexterity"
+      "Acrobatics": "Dexterity"
     },
     {
-      "name": "Animal Handling",
-      "trait": "Wisdom"
+      "Animal Handling": "Wisdom"
     },
     {
-      "name": "Arcana",
-      "trait": "Intelligence"
+      "Arcana": "Intelligence"
     },
     {
-      "name": "Athletics",
-      "trait": "Strength"
+      "Athletics": "Strength"
     },
     {
-      "name": "Deception",
-      "trait": "Charisma"
+      "Deception": "Charisma"
     },
     {
-      "name": "History",
-      "trait": "Intelligence"
+      "History": "Intelligence"
     },
     {
-      "name": "Insight",
-      "trait": "Wisdom"
+      "Insight": "Wisdom"
     },
     {
-      "name": "Intimidation",
-      "trait": "Charisma"
+      "Intimidation": "Charisma"
     },
     {
-      "name": "Investigation",
-      "trait": "Intelligence"
+      "Investigation": "Intelligence"
     },
     {
-      "name": "Medicine",
-      "trait": "Wisdom"
+      "Medicine": "Wisdom"
     },
     {
-      "name": "Nature",
-      "trait": "Intelligence"
+      "Nature": "Intelligence"
     },
     {
-      "name": "Perception",
-      "trait": "Wisdom"
+      "Perception": "Wisdom"
     },
     {
-      "name": "Performance",
-      "trait": "Charisma"
+      "Performance": "Charisma"
     },
     {
-      "name": "Persuasion",
-      "trait": "Charisma"
+      "Persuasion": "Charisma"
     },
     {
-      "name": "Religion",
-      "trait": "Intelligence"
+      "Religion": "Intelligence"
     },
     {
-      "name": "Sleight of Hand",
-      "trait": "Dexterity"
+      "Sleight of Hand": "Dexterity"
     },
     {
-      "name": "Stealth",
-      "trait": "Dexterity"
+      "Stealth": "Dexterity"
     },
     {
-      "name": "Survival",
-      "trait": "Wisdom"
+      "Survival": "Wisdom"
     }
   ]
 }

@@ -23,12 +23,19 @@
       </div>
     <% end %>
 
-    <% if flash[:error] %>
-      <div class="error alert alert-danger"><%= flash[:error] %></div>
-    <% end %>
-
     <div class="page-container container-fluid">
       <div class="row">
+
+        <% if flash[:error] || flash[:notice] || flash[:success] %>
+          <% if flash[:error] %>
+            <div class="error alert alert-danger" role="alert"><%= flash[:error] %></div>
+          <% elsif flash[:notice] %>
+            <div class="notice alert alert-info" role="alert"><%= flash[:notice] %></div>
+          <% elsif flash[:success] %>
+            <div class="notice alert alert-success" role="alert"><%= flash[:success] %></div>
+          <% end %>
+        <% end %>
+
         <%= yield %>
       </div>
     </div>

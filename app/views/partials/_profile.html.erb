@@ -1,10 +1,15 @@
 <div class="profile-panel">
   <h1><%= @user.username %></h1>
-  <%= image_tag('/default_profile_img.png', class: 'img-responsive img-rounded profile-img') %>
-  <br>
+  <div class="profile-pic">
+    <%= image_tag('/default_profile_img.png', class: 'img-responsive img-rounded profile-img') %>
+  </div>
   <div class="about-me">
     <label>Email:</label> <%= link_to "#{@user.email}", @user.email %>
     <h4>About Me</h4>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    
+    <div class="profile-buttons">
+      <%= link_to("Edit", edit_path, class: 'btn btn-primary') %> <%= link_to("Delete", profile_path, :method => :delete, data: {confirm: 'Are you sure you want to delete your profile?'}, class: 'btn btn-danger') %>
+    </div>
   </div>
 </div>

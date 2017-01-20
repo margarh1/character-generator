@@ -12,6 +12,11 @@ Rails.application.routes.draw do
   put '/profile' => 'users#update'
   delete '/profile' => 'users#destroy'
 
-  get '/characters/:name' => 'characters#new'
+  get '/characters/new' => 'characters#new'
+  get '/characters/:name' => 'characters#show'
+
+  get '/reference' => 'sessions#reference'
+
+  get '*path' => 'sessions#nonexistent'
 
 end
