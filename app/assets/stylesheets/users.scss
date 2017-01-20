@@ -2,18 +2,18 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.sign-up-form {
-  border: 1px solid black;
-  margin-top: 5%;
-  padding: 0 20px 5px 20px;
+.sign-up-form, .log-in-form {
+  padding: 0 25px 10px 25px;
   text-align: center;
   display: inline-block;
+  border-radius: 20px;
+  background-color: whitesmoke;
+}
+
+.sign-up-btn, .log-in-btn {
+  text-align: center;
 }
 
 form {
   text-align: left;
-}
-
-.sign-up-btn {
-  text-align: center;
 }

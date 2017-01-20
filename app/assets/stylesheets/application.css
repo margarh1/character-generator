@@ -19,6 +19,10 @@
   margin-top: 50px;
  }
 
+ .nav-container {
+  text-align: right;
+ }
+
  body {
   background-color: antiquewhite;
  }
