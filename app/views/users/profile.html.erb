@@ -1,20 +1,19 @@
-<h3>Skills</h3>
-<% @skills.each do |skill| %>
-  <p><%= skill['name'] + ': ' + skill['trait'] %></p>
-<% end %>
+<div class="col-xs-12 col-md-3">
+  <%= render 'partials/profile' %>
+</div>
+<div class="col-xs-12 col-md-9 characters">
+  <h1>Characters</h1>
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+  </ul>
 
-<h3>Traits</h3>
-<% @traits.each do |trait| %>
-  <p><%= trait %></p>
-<% end %>
-
-<h3>Proficiencies</h3>
-<% Proficiency.all.each do |prof| %>
-  <p><%= prof.name + ': ' +prof.label %></p>
-<% end %>
-
-<% @backgrounds.keys.each do |bg| %>
-  <p><%= bg %></p>
-<% end %>
-
-<div class="btn btn-success"><span class="glyphicon glyphicon-plus"></span></div>
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home">Testing Home</div>
+    <div role="tabpanel" class="tab-pane" id="profile">Testing Profile</div>
+    <div role="tabpanel" class="tab-pane" id="messages">Testing Messages</div>
+    <div role="tabpanel" class="tab-pane" id="settings">Testing Settings</div>
+  </div>
+</div>
