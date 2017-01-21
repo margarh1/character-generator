@@ -24,20 +24,6 @@ class UsersController < ApplicationController
 
   def profile
     @user = User.find(current_user)
-    
-    json_files = ['skills', 'traits', 'armor_proficiencies',
-                  'language_proficiencies', 'tool_proficiencies',
-                  'instrument_proficiencies', 'gaming_set_proficiencies',
-                  'vehicle_proficiencies', 'backgrounds',
-                  'armor', 'gods', 'trinkets', 'weapons']
-    json_files.each do |path|
-      file = File.read(Dir.pwd + "/reference/#{path}.json")
-      data_hash = JSON.parse(file)
-      @skills = data_hash["#{path}"] if path == 'skills'
-      @traits = data_hash["#{path}"] if path == 'traits'
-      @armor = data_hash["#{path}"] if path == 'armor'
-      @backgrounds = data_hash["#{path}"] if path == 'backgrounds'
-    end
   end
 
   def edit

@@ -111,6 +111,201 @@
         "damage": "1d4 bludgeoning",
         "properties": "Ammunition (range 30/120)"
       }
+    },
+    "martial melee": {
+      "Battleaxe": {
+        "cost": "10 gp",
+        "damage": "1d8 slashing",
+        "weight": 4,
+        "properties": "Versatile (1d10)"
+      },
+      "Flail": {
+        "cost": "10 gp",
+        "damage": "1d8 bludgeoning",
+        "weight": 2
+      },
+      "Glaive": {
+        "cost": "20 gp",
+        "damage": "1d10 slashing",
+        "weight": 6,
+        "properties": [
+          "Heavy",
+          "Reach",
+          "Two-handed"
+        ]
+      },
+      "Greataxe": {
+        "cost": "30 gp",
+        "damage": "1d12 slashing",
+        "weight": 7,
+        "properties": [
+          "Heavy",
+          "Two-handed"
+        ]
+      },
+      "Greatsword": {
+        "cost": "50 gp",
+        "damage": "2d6 slashing",
+        "weight": 6,
+        "properties": [
+          "Heavy",
+          "Two-handed"
+        ]
+      },
+      "Halberd": {
+        "cost": "20 gp",
+        "damage": "1d10 slashing",
+        "weight": 6,
+        "properties": [
+          "Heavy",
+          "Reach",
+          "Two-handed"
+        ]
+      },
+      "Lance": {
+        "cost": "10 gp",
+        "damage": "1d12 slashing",
+        "weight": 6,
+        "properties": [
+          "Reach",
+          "Disadvantage when attacking a target within 5 ft of you",
+          "Two-handed when on foot"
+        ]
+      },
+      "Longsword": {
+        "cost": "15 gp",
+        "damage": "1d8 slashing",
+        "weight": 3,
+        "properties": "Versatile (1d10)"
+      },
+      "Maul": {
+        "cost": "10 gp",
+        "damage": "2d6 bludgeoning",
+        "weight": 10,
+        "properties": [
+          "Heavy",
+          "Two-handed"
+        ]
+      },
+      "Morningstar": {
+        "cost": "15 gp",
+        "damage": "1d8 piercing",
+        "weight": 4
+      },
+      "Pike": {
+        "cost": "5 gp",
+        "damage": "1d10 piercing",
+        "weight": 18,
+        "properties": [
+          "Heavy",
+          "Reach",
+          "Two-handed"
+        ]
+      },
+      "Rapier": {
+        "cost": "25 gp",
+        "damage": "1d8 piercing",
+        "weight": 2,
+        "properties": "Finesse"
+      },
+      "Scimitar": {
+        "cost": "25 gp",
+        "damage": "1d6 slashing",
+        "weight": 3,
+        "properties": [
+          "Finesse",
+          "Light"
+        ]
+      },
+      "Shortsword": {
+        "cost": "10 gp",
+        "damage": "1d6 piercing",
+        "weight": 2,
+        "properties": [
+          "Finesse",
+          "Light"
+        ]
+      },
+      "Trident": {
+        "cost": "5 gp",
+        "damage": "1d6 piercing",
+        "weight": 4,
+        "properties": [
+          "Thrown (range 20/60)",
+          "Versatile (1d8)"
+        ]
+      },
+      "War pick": {
+        "cost": "5 gp",
+        "damage": "1d8 piercing",
+        "weight": 2
+      },
+      "Warhammer": {
+        "cost": "15 gp",
+        "damage": "1d8 bludgeoning",
+        "weight": 2,
+        "properties": "Versatile (1d10)"
+      },
+      "Whip": {
+        "cost": "2 gp",
+        "damage": "1d4 slashing",
+        "weapons": 3,
+        "properties": [
+          "Finesse",
+          "Reach"
+        ]
+      }
+    },
+    "martial ranged": {
+      "Blowgun": {
+        "cost": "10 gp",
+        "damage": "1 piercing",
+        "weight": 1,
+        "properties": [
+          "Ammunition (range 25/100)",
+          "Loading"
+        ]
+      },
+      "Crossbow, hand": {
+        "cost": "75 gp",
+        "damage": "1d6 piercing",
+        "weight": 3,
+        "properties": [
+          "Ammunition (range 30/120)",
+          "Light",
+          "Loading"
+        ]
+      },
+      "Crossbow, heavy": {
+        "cost": "50 gp",
+        "damage": "1d10 piercing",
+        "weight": 18,
+        "properties": [
+          "Ammunition (range 100/400)",
+          "Heavy",
+          "Loading",
+          "Two-handed"
+        ]
+      },
+      "Longbow": {
+        "cost": "50 gp",
+        "damage": "1d8 piercing",
+        "weight": 2,
+        "properties": [
+          "Ammunition (range 150/600)",
+          "Heavy",
+          "Two-handed"
+        ]
+      },
+      "Net": {
+        "cost": "1 gp",
+        "weight": 3,
+        "properties": [
+          "Thrown (range 5/15)",
+          "Large or smaller creature hit by net is restrained until free",
+          "Can only make one action if throwing net"
+        ]
+      }
     }
   }
 }
