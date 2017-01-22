@@ -1,0 +1,59 @@
+<div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 character-form">
+  <h1>Create New Character</h1>
+
+  <%= form_for :character, url: characters_path do |f| %>
+    <%= f.hidden_field :user_id, :value => session[:user_id] %>
+    <%= f.hidden_field :race, :value => 'thing' %>
+    <%= f.hidden_field :class, :value => 'other thing' %>
+    <%= f.hidden_field :exp, :value => 0 %>
+    <div class="col-md-6">
+      <div data-spy="scroll" class="scroll">
+        <div class="form-group">
+          <label for='character_name'>Name</label>
+          <%= f.text_field :name, class: 'form-control' %>
+        </div>
+        <div class="form-group">
+          <label for='character_level'>Level</label>
+          <%= f.number_field :level, class: 'form-control', in: 1..20, value: 1 %>
+        </div>
+        <div class="form-group">
+          <label for='character_traits'>Traits</label>
+          <!-- <div>
+            <% data = JSON.parse(File.read(Dir.pwd + '/reference/traits.json')) %>
+            <% data['traits'].each do |trait| %>
+              <%= trait %>: <%= number_field_tag trait, '10', class: 'form-inline', in: 1..20 %><br>
+            <% end %>
+          </div> -->
+        </div>
+        <div class="form-group">
+          <label for='character_background'>Background</label>
+          <div data-spy="scroll" class="form-scroll">
+            <% data = JSON.parse(File.read(Dir.pwd + '/reference/backgrounds.json')) %>
+            <% data['backgrounds'].keys.each do |bg| %>
+              <%= f.radio_button :background, bg %> <%= bg %><br>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div data-spy="scroll" class="scroll form-check">
+        <p><b>Name:</b> <span class="character_name">---</span></p>
+        <p><b>Level:</b> <span class="character_level">1</span></p>
+        <p><b>Traits:</b></p>
+        <p>Strength: <span class="Strength">10</span></p>
+        <p>Dexterity: <span class="Dexterity">10</span></p>
+        <p>Constitution: <span class="Constitution">10</span></p>
+        <p>Intelligence: <span class="Intelligence">10</span></p>
+        <p>Wisdom: <span class="Wisdom">10</span></p>
+        <p>Charisma: <span class="Charisma">10</span></p>
+        <p><b>Background:</b> <span class="character_background">----</span></p>
+      </div>
+    </div>
+    <div class="col-md-12">
+      <div class="form-group clearfix create-character-btn">
+        <%= f.submit(class: 'btn btn-success') %>
+      </div>
+    </div>
+  <% end %>
+</div>

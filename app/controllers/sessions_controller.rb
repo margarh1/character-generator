@@ -29,10 +29,9 @@ class SessionsController < ApplicationController
   end
 
   def reference
-    @tabs = ['armor', 'backgrounds', 'equipment', 'gaming_set_proficiencies',
-            'gods', 'instrument_proficiencies', 'language_proficiencies', 'skills',
-            'tool_proficiencies', 'traits', 'trinkets', 'vehicle_proficiencies',
-            'weapons']
+    @tabs = ['alignments', 'armor', 'backgrounds', 'equipment', 'gaming_sets', 'gods',
+            'instruments', 'languages', 'levels', 'skills', 'spells', 'tools',
+            'traits', 'trinkets', 'vehicles', 'weapons']
   end
 
   private

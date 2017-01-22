@@ -1,0 +1,85 @@
+{
+  "races": {
+    "Dwarf": {
+      "trait": {
+        "Constitution": 2
+      },
+      "lifespan": 350,
+      "alignment": "Lawful Good",
+      "size": "Medium",
+      "speed": [
+        25,
+        "not reduced by wearing heavy armor"
+      ],
+      "abilities": {
+        "Darkvision": [
+          "60 feet",
+          "see in dim light like it is bright light",
+          "see in darkness like it is dim light",
+          "no color, only shades of gray"
+        ],
+        "Dwarven Resilience": [
+          "advantage on saving throws against poison",
+          "resistance against poison damage"
+        ],
+        "Dwarven Combat Training": [
+          "Battleaxe proficiency",
+          "Handaxe proficiency",
+          "Throwing hammer proficiency",
+          "Warhammer proficiency"
+        ],
+        "tools (1)": [
+          "Smith's tools",
+          "Brewer's supplies",
+          "Mason's tools"
+        ],
+        "Stonecunning": [
+          "Intellligence(History) check related to origin of stonework",
+          "History proficiency",
+          "add double your proficiency bonus to your roll"
+        ],
+        "languages": [
+          "Common",
+          "Dwarvish"
+        ],
+        "subraces": {
+          "Hill": {
+            "trait": {
+              "Wisdom": 1
+            },
+            "Dwarven Toughness": "HP max +1 per level"
+          },
+          "Mountain": {
+            "trait": {
+              "Strength": 2
+            },
+            "Dwarven Armor Training": [
+              "Light armor proficiency",
+              "Medium armor proficiency"
+            ]
+          }
+        },
+        "names": {
+          "male": [
+            "Adrik", "Alberich", "Baern", "Barendd", "Brottor", "Bruenor",
+            "Dain", "Darrak", "Delg", "Eberk", "Einkil", "Fargrim", "Flint",
+            "Gardain", "Harbek", "Kildrak", "Morgran", "Orsik", "Oskar",
+            "Rangrim", "Rurik", "Taklinn", "Thoradin", "Thorin", "Tordek",
+            "Traubon", "Travok", "Ulfgar", "Veit", "Vondal"
+          ],
+          "female": [
+            "Amber", "Artin", "Audhild", "Bardryn", "Dagnal", "Diesa", "Eldeth",
+            "Falkrunn", "Finellen", "Gunnloda", "Gurdis", "Helja", "Hlin", "Kathra",
+            "Kristryd", "Ilde", "Liftrasa", "Mardred", "Riswynn", "Sannl", "Torbera",
+            "Torgga", "Vistra"
+          ],
+          "surnames": [
+            "Balderk", "Battlehammer", "Brawnanvil", "Dankil", "Fireforge", "Frostbeard",
+            "Gorunn", "Holderhek", "Ironfist", "Loderr", "Lutgehr", "Rumnaheim", "Strakeln",
+            "Torunn", "Ungart"
+          ]
+        }
+      }
+    }
+  }
+}

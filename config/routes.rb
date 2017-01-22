@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  root 'users#new'
+
   get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'
   get '/logout' => 'sessions#destroy'
@@ -12,8 +14,9 @@ Rails.application.routes.draw do
   put '/profile' => 'users#update'
   delete '/profile' => 'users#destroy'
 
-  get '/characters/new' => 'characters#new'
-  get '/characters/:name' => 'characters#show'
+  get '/characters/new' => 'characters#new', as: 'new_character'
+  post '/characters' => 'characters#create'
+  get '/characters/:name' => 'characters#show', as: 'character'
 
   get '/reference' => 'sessions#reference'
   get '*path' => 'sessions#nonexistent'

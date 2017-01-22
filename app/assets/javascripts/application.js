@@ -15,3 +15,18 @@
 //= require turbolinks
 //= require bootstrap-3.3.7.min
 //= require_tree .
+
+$(document).on('turbolinks:load', function() {
+
+  $('input').focusout(function() {
+    console.log(this);
+    console.log(this.name);
+    console.log($('#' + this.id).prop('value'));
+    if (this.id.includes('character_background')) {
+      $('.character_background').prop('textContent', $('#' + this.id).prop('value'));
+    } else {
+      $('.' + this.id).prop('textContent', $('#' + this.id).prop('value'));
+    };
+  });
+
+});

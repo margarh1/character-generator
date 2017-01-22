@@ -33,8 +33,8 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    logout_path
     User.destroy(current_user)
+    session[:user_id] = nil
     redirect_to signup_path
   end
 

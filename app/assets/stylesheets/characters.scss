@@ -1,0 +1,27 @@
+// Place all the styles related to the characters controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.character-form {
+  margin-top: 1%;
+  padding: 0 25px 10px 25px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 20px;
+  background-color: whitesmoke;
+}
+
+.create-character-btn {
+  text-align: center;
+}
+
+.scroll {
+  overflow: auto;
+  height: 500px;
+}
+
+.form-scroll {
+  overflow: auto;
+  height: 100px;
+  padding: 1%;
+}

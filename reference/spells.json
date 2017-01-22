@@ -1,0 +1,133 @@
+{
+  "spells": {
+    "cantrips": {
+      "Acid Splash": {
+        "school": "Conjuration",
+        "casting time": "1 action",
+        "range": "60 feet",
+        "components": "V,S",
+        "duration": "Instantaneous",
+        "element": "Acid",
+        "save": "Dexterity",
+        "damage": "1d6"
+      },
+      "Blade Ward": {
+        "school": "Abjuration",
+        "casting time": "1 action",
+        "range": "Self",
+        "components": "V,S",
+        "duration": "1 round"
+      },
+      "Chill Touch": {
+        "school": "Necromancy",
+        "casting time": "1 action",
+        "range": "120 feet",
+        "components": "V,S",
+        "duration": "1 round",
+        "element": "Necrotic",
+        "damage": "1d8"
+      }
+    },
+    "1st level": {
+      "Alarm": {
+        "school": "Abjuration",
+        "casting time": "1 minute",
+        "range": "30 feet",
+        "components": "V,S,M (a tiny bell and a piece of fine silver wire)",
+        "duration": "8 hours"
+      },
+      "Animal Friendship": {
+        "school": "Enchantment",
+        "casting time": "1 action",
+        "range": "30 feet",
+        "components": "V,S,M (a morsel of food)",
+        "duration": "24 hours",
+        "save": "Wisdom"
+      },
+      "Armor of Agathys": {
+        "school": "Abjuration",
+        "casting time": "1 action",
+        "range": "Self",
+        "components": "V,S,M (a cup of water)",
+        "duration": "1 hour",
+        "element": "Cold",
+        "damage": 5
+      },
+      "Arms of Hadar": {
+        "school": "Conjuration",
+        "casting time": "1 action",
+        "range": "Self (10-foot radius)",
+        "components": "V,S",
+        "duration": "Instantaneous",
+        "element": "Necrotic",
+        "save": "Strength",
+        "damage": "2d6"
+      },
+      "Bane": {
+        "school": "Enchantment",
+        "casting time": "1 action",
+        "range": "30 feet",
+        "components": "V,S,M (a drop of blood)",
+        "duration": "Concentration, up to 1 minute",
+        "save": "Charisma"
+      },
+      "Bless": {
+        "school": "Enchantment",
+        "casting time": "1 action",
+        "range": "30 feet",
+        "components": "V,S,M (a sprinkling of holy water)",
+        "duration": "Concentration, up to 1 minute"
+      },
+      "Burning Hands": {
+        "school": "Evocation",
+        "casting time": "1 action",
+        "range": "Self (15-foot cone)",
+        "components": "V,S",
+        "duration": "Instantaneous",
+        "element": "Fire",
+        "save": "Dexterity",
+        "damage": "3d6"
+      },
+      "Charm Person": {
+        "school": "Enchantment",
+        "casting time": "1 action",
+        "range": "30 feet",
+        "components": "V,S",
+        "duration": "1 hour",
+        "save": "Wisdom"
+      },
+      "Chromatic Orb": {
+        "school": "Evocation",
+        "casting time": "1 action",
+        "range": "90 feet",
+        "components": "V,S,M (a diamond worth at least 50 gp)",
+        "duration": "Instantaneous",
+        "element": [
+          "Acid",
+          "Cold",
+          "Fire",
+          "Lightning",
+          "Poison",
+          "Thunder"
+        ],
+        "damage": "3d8"
+      },
+      "Color Spray": {
+        "school": "Illusion",
+        "casting time": "1 action",
+        "range": "Self (15-foot cone)",
+        "components": "V,S,M (a pinch of powder or sand that is colored red, yellow, and blue)",
+        "duration": "1 round",
+        "damage": "6d10"
+      },
+      "Command": {
+        "school": "Enchantment",
+        "casting time": "1 action",
+        "range": "60 feet",
+        "components": "V",
+        "duration": "1 round",
+        "save": "Wisdom"
+      }
+    }
+  }
+}

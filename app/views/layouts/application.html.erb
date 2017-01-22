@@ -14,6 +14,7 @@
         <div class="nav-container container-fluid">
           <% if current_user %>
             <%= link_to "Profile", profile_path, class: 'btn navbar-btn profile-btn' %>
+            <%= link_to "Reference", reference_path, class: 'btn navbar-btn profile-btn' %> <!-- take out later, maybe? prolly -->
             <%= link_to "Log Out", logout_path, class: 'btn btn-info navbar-btn' %>
           <% else %>
             <%= link_to "Log In", login_path, class: 'btn btn-info navbar-btn' %>

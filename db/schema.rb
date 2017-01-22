@@ -10,63 +10,34 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170119004954) do
+ActiveRecord::Schema.define(version: 20170122040912) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "bonds", force: :cascade do |t|
-    t.integer  "roll"
-    t.string   "description"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-  end
-
   create_table "campaigns", force: :cascade do |t|
     t.string   "name"
     t.string   "description"
-    t.boolean  "dm_only_editing"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.boolean  "dm_only_exp_editing"
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
   end
 
-  create_table "flaws", force: :cascade do |t|
-    t.integer  "roll"
-    t.string   "description"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-  end
-
-  create_table "ideals", force: :cascade do |t|
-    t.integer  "roll"
-    t.string   "description"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-  end
-
-  create_table "personality_traits", force: :cascade do |t|
-    t.integer  "roll"
-    t.string   "description"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-  end
-
-  create_table "proficiencies", force: :cascade do |t|
+  create_table "characters", force: :cascade do |t|
     t.string   "name"
-    t.string   "label"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "skills", force: :cascade do |t|
-    t.string   "name"
-    t.string   "trait"
+    t.integer  "level"
+    t.integer  "exp"
+    t.string   "class"
+    t.string   "race"
+    t.string   "background"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "traits", force: :cascade do |t|
     t.string   "name"
+    t.integer  "value"
+    t.integer  "modifier"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
