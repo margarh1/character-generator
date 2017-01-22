@@ -12,44 +12,522 @@
       "cost": "50 gp",
       "weight": 1
     },
-    "Arrows (20)": {
-      "cost": "1 gp",
-      "weight": 1
-    },
-    "Blowgun needles (50)": {
-      "cost": "1 gp",
-      "weight": 1
-    },
-    "Crossbow bolts (20)": {
-      "cost": "1 gp",
-      "weight": 1.5
-    },
-    "Sling bullets (20)": {
-      "cost": "4 cp",
-      "weight": 1.5
+    "Ammunition": {
+      "Arrows (20)": {
+        "cost": "1 gp",
+        "weight": 1
+      },
+      "Blowgun needles (50)": {
+        "cost": "1 gp",
+        "weight": 1
+      },
+      "Crossbow bolts (20)": {
+        "cost": "1 gp",
+        "weight": 1.5
+      },
+      "Sling bullets (20)": {
+        "cost": "4 cp",
+        "weight": 1.5
+      }
     },
     "Antitoxin (vial)": {
       "cost": "50 gp"
     },
-    "Crystal": {
-      "cost": "10 gp",
-      "weight": 1
+    "Arcane focus": {
+      "Crystal": {
+        "cost": "10 gp",
+        "weight": 1
+      },
+      "Orb": {
+        "cost": "20 gp",
+        "weight": 3
+      },
+      "Rod": {
+        "cost": "10 gp",
+        "weight": 2
+      },
+      "Staff": {
+        "cost": "5 gp",
+        "weight": 4
+      },
+      "Wand": {
+        "cost": "10 gp",
+        "weight": 1
+      }
     },
-    "Orb": {
-      "cost": "20 gp",
-      "weight": 3
+    "Backpack": {
+      "cost": "2 gp",
+      "weight": 5
     },
-    "Rod": {
-      "cost": "10 gp",
+    "Ball bearings (bag of 1,000)": {
+      "cost": "1 gp",
       "weight": 2
     },
-    "Staff": {
+    "Barrel": {
+      "cost": "2 gp",
+      "weight": 70
+    },
+    "Basket": {
+      "cost": "4 sp",
+      "weight": 2
+    },
+    "Bedroll": {
+      "cost": "1 gp",
+      "weight": 7
+    },
+    "Bell": {
+      "cost": "1 gp"
+    },
+    "Blanket": {
+      "cost": "5 sp",
+      "weight": 3
+    },
+    "Block and tackle": {
+      "cost": "1 gp",
+      "weight": 5
+    },
+    "Book": {
+      "cost": "25 gp",
+      "weight": 5
+    },
+    "Bottle, glass": {
+      "cost": "2 gp",
+      "weight": 2
+    },
+    "Bucket": {
+      "cost": "5 cp",
+      "weight": 2
+    },
+    "Caltrops (bag of 20)": {
+      "cost": "1 gp",
+      "weight": 2
+    },
+    "Candle": {
+      "cost": "1 cp"
+    },
+    "Case, crossbow bolt": {
+      "cost": "1 gp",
+      "weight": 1
+    },
+    "Case, map or scroll": {
+      "cost": "1 gp",
+      "weight": 1
+    },
+    "Chain (10 feet)": {
+      "cost": "5 gp",
+      "weight": 10
+    },
+    "Chalk": {
+      "cost": "1 cp"
+    },
+    "Chest": {
+      "cost": "5 gp",
+      "weight": 25
+    },
+    "Climber's kit": {
+      "cost": "25 gp",
+      "weight": 12
+    },
+    "Clothes, common": {
+      "cost": "5 sp",
+      "weight": 3
+    },
+    "Clothes, costume": {
       "cost": "5 gp",
       "weight": 4
     },
-    "Wand": {
+    "Clothes, fine": {
+      "cost": "15 gp",
+      "weight": 6
+    },
+    "Clothes, traveler's": {
+      "cost": "2 gp",
+      "weight": 4
+    },
+    "Component pouch": {
+      "cost": "25 gp",
+      "weight": "2"
+    },
+    "Crowbar": {
+      "cost": "2 gp",
+      "weight": 5
+    },
+    "Druidic focus": {
+      "Sprig of mistletoe": {
+        "cost": "1 gp"
+      },
+      "Totem": {
+        "cost": "1 gp"
+      },
+      "Wooden staff": {
+        "cost": "5 gp",
+        "weight": 4
+      },
+      "Yew wand": {
+        "cost": "10 gp",
+        "weight": 1
+      }
+    },
+    "Fishing tackle": {
+      "cost": "1 gp",
+      "weight": 4
+    },
+    "Flask or tankard": {
+      "cost": "2 cp",
+      "weight": 1
+    },
+    "Grappling hook": {
+      "cost": "2 gp",
+      "weight": 4
+    },
+    "Hammer": {
+      "cost": "1 gp",
+      "weight": 3
+    },
+    "Hammer, sledge": {
+      "cost": "2 gp",
+      "weight": 10
+    },
+    "Healer's kit": {
+      "cost": "5 gp",
+      "weight": 3
+    },
+    "Holy symbol": {
+      "Amulet": {
+        "cost": "5 gp",
+        "weight": 1
+      },
+      "Emblem": {
+        "cost": "5 gp",
+      },
+      "Reliquary": {
+        "cost": "5 gp",
+        "weight": 2
+      }
+    },
+    "Holy water (flask)": {
+      "cost": "25 gp",
+      "weight": 1
+    },
+    "Hourglass": {
+      "cost": "25 gp",
+      "weight": 1
+    },
+    "Hunting trap": {
+      "cost": "5 gp",
+      "weight": 25
+    },
+    "Ink (1 ounce bottle)": {
+      "cost": "10 gp"
+    },
+    "Ink pen": {
+      "cost": "2 cp"
+    },
+    "Jug or pitcher": {
+      "cost": "2 cp",
+      "weight": 4
+    },
+    "Ladder (10-foot)": {
+      "cost": "1 sp",
+      "weight": 25
+    },
+    "Lamp": {
+      "cost": "5 sp",
+      "weight": 1
+    },
+    "Lantern, bullseye": {
+      "cost": "10 gp",
+      "weight": 2
+    },
+    "Lantern, hooded": {
+      "cost": "5 gp",
+      "weight": 2
+    },
+    "Lock": {
       "cost": "10 gp",
       "weight": 1
+    },
+    "Magnifying glass": {
+      "cost": "100 gp"
+    },
+    "Manacles": {
+      "cost": "2 gp",
+      "weight": 6
+    },
+    "Mess kit": {
+      "cost": "2 sp",
+      "weight": 1
+    },
+    "Mirror, steel": {
+      "cost": "5 gp",
+      "weight": 0.5
+    },
+    "Oil (flask)": {
+      "cost": "1 sp",
+      "weight": 1
+    },
+    "Paper (one sheet)": {
+      "cost": "2 sp"
+    },
+    "Parchment (one sheet)": {
+      "cost": "1 sp"
+    },
+    "Perfume (vial)": {
+      "cost": "5 gp"
+    },
+    "Pick, miner's": {
+      "cost": "2 gp",
+      "weight": 10
+    },
+    "Piton": {
+      "cost": "5 cp",
+      "weight": 0.25
+    },
+    "Poison, basic (vial)": {
+      "cost": "100 gp"
+    },
+    "Pole (10-foot)": {
+      "cost": "5 cp",
+      "weight": 7
+    },
+    "Pot, iron": {
+      "cost": "2 gp",
+      "weight": 10
+    },
+    "Potion of healing": {
+      "cost": "50 gp",
+      "weight": 0.5
+    },
+    "Pouch": {
+      "cost": "5 sp",
+      "weight": 1
+    },
+    "Quiver": {
+      "cost": "1 gp",
+      "weight": 1
+    },
+    "Ram, portable": {
+      "cost": "4 gp",
+      "weight": 35
+    },
+    "Rations (1 day)": {
+      "cost": "5 sp",
+      "weight": 2
+    },
+    "Robes": {
+      "cost": "1 gp",
+      "weight": 4
+    },
+    "Rope, hempen (50 feet)": {
+      "cost": "1 gp",
+      "weight": 10
+    },
+    "Rope, silk (50 feet)": {
+      "cost": "10 gp",
+      "weight": 5
+    },
+    "Sack": {
+      "cost": "1 cp",
+      "weight": 0.5
+    },
+    "Scale, merchant's": {
+      "cost": "5 gp",
+      "weight": 3
+    },
+    "Sealing wax": {
+      "cost": "5 sp"
+    },
+    "Shovel": {
+      "cost": "2 gp",
+      "weight": 5
+    },
+    "Signal whistle": {
+      "cost": "5 cp"
+    },
+    "Signet ring": {
+      "cost": "5 gp"
+    },
+    "Soap": {
+      "cost": "2 cp"
+    },
+    "Spellbook": {
+      "cost": "50 gp",
+      "weight": 3
+    },
+    "Spikes, iron (10)": {
+      "cost": "1 gp",
+      "weight": 5
+    },
+    "Spyglass": {
+      "cost": "1,000 gp",
+      "weight": 1
+    },
+    "Tent, two-person": {
+      "cost": "2 gp",
+      "weight": 20
+    },
+    "Tinderbox": {
+      "cost": "5 sp",
+      "weight": 1
+    },
+    "Torch": {
+      "cost": "1 cp",
+      "weight": 1
+    },
+    "Vial": {
+      "cost": "1 gp"
+    },
+    "Waterskin (full)": {
+      "cost": "2 sp",
+      "weight": 5
+    },
+    "Whetstone": {
+      "cost": "1 cp",
+      "weight": 1
+    },
+    "Equipment Packs": {
+      "Burglar's Pack": {
+        "cost": "16 gp",
+        "contents": [
+          "Backpack",
+          "Ball bearings (bag of 1,000)",
+          "String (10 feet)",
+          "Bell",
+          "Candle (5)",
+          "Crowbar",
+          "Hammer",
+          "Piton (10)",
+          "Lantern, hooded",
+          "Oil flask (2)",
+          "Rations (5)",
+          "Tinderbox",
+          "Waterskin",
+          "Rope, hempen (50 feet)"
+        ]
+      },
+      "Diplomat's Pack": {
+        "cost": "39 gp",
+        "contents": [
+          "Chest",
+          "Case, map or scroll (2)",
+          "Clothes, fine",
+          "Ink",
+          "Ink pen",
+          "Lamp",
+          "Oil flask (2)",
+          "Paper (5)",
+          "Perfume",
+          "Sealing wax",
+          "Soap"
+        ]
+      },
+      "Dungeoneer's Pack": {
+        "cost": "12 gp",
+        "contents": [
+          "Backpack",
+          "Crowbar",
+          "Hammer",
+          "Piton (10)",
+          "Torch (10)",
+          "Tinderbox",
+          "Rations (10)",
+          "Waterskin",
+          "Rope, hempen (50 feet)"
+        ]
+      },
+      "Entertainer's Pack": {
+        "cost": "40 gp",
+        "contents": [
+          "Backpack",
+          "Bedroll",
+          "Clothing, costume (2)",
+          "Candle (5)",
+          "Rations (5)",
+          "Waterskin",
+          "Disguise kit"
+        ]
+      },
+      "Explorer's Pack": {
+        "cost": "10 gp",
+        "contents": [
+          "Backpack",
+          "Bedroll",
+          "Mess kit",
+          "Tinderbox",
+          "Torch (10)",
+          "Rations (10)",
+          "Waterskin",
+          "Rope, hempen (50 feet)"
+        ]
+      },
+      "Priest's Pack": {
+        "cost": "19 gp",
+        "contents": [
+          "Backpack",
+          "Blanket",
+          "Candle (10)",
+          "Tinderbox",
+          "Alms box",
+          "Incense, block (2)",
+          "Censer",
+          "Vestments",
+          "Rations (2)",
+          "Waterskin"
+        ]
+      },
+      "Scholar's Pack": {
+        "cost": "40 gp",
+        "contents": [
+          "Backpack",
+          "Book, lore",
+          "Ink",
+          "Ink pen",
+          "Parchment (10)",
+          "Sand, little bag",
+          "Knife, small"
+        ]
+      }
     }
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

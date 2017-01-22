@@ -16,7 +16,6 @@ Rails.application.routes.draw do
   get '/characters/:name' => 'characters#show'
 
   get '/reference' => 'sessions#reference'
-
   get '*path' => 'sessions#nonexistent'
 
 end
