@@ -298,6 +298,14 @@
         "Common",
         "Choose one"
       ],
+      "height": [
+        56,
+        "2d10"
+      ],
+      "weight": [
+        110,
+        "2d4"
+      ],
       "variant": {
         "trait": {
           "two traits": 1
@@ -398,6 +406,189 @@
       }
     },
     "Dragonborn": {
+      "trait": {
+        "Strength": 2,
+        "Charisma": 1
+      },
+      "lifespan": 80,
+      "alignment": null,
+      "size": "Medium",
+      "speed": 30,
+      "languages": [
+        "Common",
+        "Draconic"
+      ],
+      "height": [
+        66,
+        "2d8"
+      ],
+      "weight": [
+        175,
+        "2d6"
+      ],
+      "abilities": {
+        "Draconic Ancestry": {
+          "Black": {
+            "element": "Acid",
+            "range": "5 x 30 ft line",
+            "save": "Dexterity"
+          },
+          "Blue": {
+            "element": "Lightning",
+            "range": "5 x 30 ft line",
+            "save": "Dexterity"
+          },
+          "Brass": {
+            "element": "Fire",
+            "range": "5 x 30 ft line",
+            "save": "Dexterity"
+          },
+          "Bronze": {
+            "element": "Lightning",
+            "range": "5 x 30 ft line",
+            "save": "Dexterity"
+          },
+          "Copper": {
+            "element": "Acid",
+            "range": "5 x 30 ft line",
+            "save": "Dexterity"
+          },
+          "Gold": {
+            "element": "Fire",
+            "range": "15 ft cone",
+            "save": "Dexterity"
+          },
+          "Green": {
+            "element": "Poison",
+            "range": "15 ft cone",
+            "save": "Constitution"
+          },
+          "Red": {
+            "element": "Fire",
+            "range": "15 ft cone",
+            "save": "Dexterity"
+          },
+          "Silver": {
+            "element": "Cold",
+            "range": "15 ft cone",
+            "save": "Constitution"
+          },
+          "White": {
+            "element": "Cold",
+            "range": "15 ft cone",
+            "save": "Constitution"
+          }
+        },
+        "Breath Weapon": {
+          "DC": "8 + Con mod + proficiency bonus",
+          "damage": "2d6"
+        },
+        "Damage Resistance": "You have resistance to the damage type associated with your draconic ancestry."
+      },
+      "names": {
+        "child": [
+          "Climber", "Earbender", "Leaper", "Pious", "Shieldbiter", "Zealous"
+        ],
+        "male": [
+          "Arjhan", "Balasar", "Bharash", "Donaar", "Ghesh", "Heskan", "Kriv",
+          "Medrash", "Mehen", "Nadarr", "Pandjed", "Patrin", "Rhogar", "Shamash",
+          "Shedinn", "Tarhun", "Torinn"
+        ],
+        "female": [
+          "Akra", "Biri", "Daar", "Farideh", "Harann", "Havilar", "Jheri", "Kava",
+          "Korinn", "Mishann", "Nala", "Perra", "Raiann", "Sora", "Surina", "Thava",
+          "Uadjit"
+        ],
+        "surnames": [
+          "Clethtinthiallor", "Daardendrian", "Delmirev", "Drachedandion",
+          "Fenkenkabradon", "Kepeshkmolik", "Kerrhylon", "Kimbatuul", "Linxakasendalor",
+          "Myastan", "Nemmonis", "Norixius", "Ophinshtalajiir", "Prexijandilin",
+          "Shestendeliath", "Turnuroth", "Verthisathurgiesh", "Yarjerit"
+        ]
+      }
+    },
+    "Gnome": {
+      "trait": {
+        "Intelligence": 2
+      },
+      "lifespan": 500,
+      "alignment": "Good",
+      "size": "Small",
+      "speed": 25,
+      "languages": [
+        "Common",
+        "Gnomish"
+      ],
+      "height": [
+        35,
+        "2d4"
+      ],
+      "weight": [
+        35,
+        1
+      ],
+      "abilities": {
+        "Darkvision": [
+          "60 feet",
+          "see in dim light like it is bright light",
+          "see in darkness like it is dim light",
+          "no color, only shades of gray"
+        ],
+        "Gnomish Cunning": [
+          "advantage on the following saving throws against magic",
+          "Intelligence",
+          "Wisdom",
+          "Charisma"
+        ]
+      },
+      "subraces": {
+        "Forest": {
+          "trait": {
+            "Dexterity": 1
+          },
+          "Natural Illusionist": {
+            "spellcasting ability": "Intelligence",
+            "cantrip": "Minor Illusion"
+          },
+          "Speak with Small Beasts": "You can communicate simple ideas with Small or smaller beasts."
+        },
+        "Rock": {
+          "trait": {
+            "Constitution": 1
+          },
+          "Artificer's Lore": "Whenever you make an Intelligence (History) check related to magic items, alchemical objects, or technological devices, you can add twice your proficiency bonus, instead of any proficiency bonus you normally apply.",
+          "Tinker": {
+            "Artisan's (tinker's) tools": "You can spend 1 hr and 10 gp worth of materials to construct a Tiny clockwork device (AC 5, 1 hp)",
+            "device": [
+              "Clockwork Toy",
+              "Fire Starter",
+              "Music Box"
+            ]
+          }
+        }
+      },
+      "names": {
+        "nicknames": [
+          "Aleslosh", "Ashhearth", "Badger", "Cloak", "Doublelock", "Filchbatter",
+          "Fnipper", "Ku", "Nim", "Oneshoe", "Pock", "Sparklegem", "Stumbleduck"
+        ],
+        "male": [
+          "Alston", "Alvyn", "Boddynock", "Brocc", "Burgell", "Dimble", "Eldon",
+          "Erky", "Fonkin", "Frug", "Gerbo", "Gimble", "Glim", "Jebeddo", "Kellen",
+          "Namfoodle", "Orryn", "Roondar", "Seebo", "Sindri", "Warryn", "Wrenn", "Zook"
+        ],
+        "female": [
+          "Bimpnottin", "Breena", "Caramip", "Carlin", "Donella", "Duvamil", "Ella",
+          "Ellyjobell", "Ellywick", "Lilli", "Loopmottin", "Lorilla", "Mardnab", "Nissa",
+          "Nyx", "Oda", "Orla", "Roywyn", "Shamil", "Tana", "Waywocket", "Zanna"
+        ],
+        "surnames": [
+          "Beren", "Daergel", "Folkor", "Garrick", "Nackle", "Murnig", "Ningel", "Raulnor",
+          "Scheppen", "Timbers", "Turen"
+        ]
+      }
+    },
+    "Half-elf": {
       
     }
   }
