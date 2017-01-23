@@ -1,10 +1,124 @@
 {
   "classes": {
     "Barbarian": {
-
+      "quick build": {
+        "Strength": "first",
+        "Constitution": "second",
+        "background": "Outlander"
+      },
+      "hit points": "1d12 + Con mod",
+      "proficiencies": [
+        "Light armor",
+        "Medium armor",
+        "Shields",
+        "Simple weapons",
+        "Martial weapons"
+      ],
+      "saving throws": [
+        "Strength", "Constitution"
+      ],
+      "skills": {
+        "2": [
+          "Animal Handling",
+          "Athletics",
+          "Intimidation",
+          "Nature",
+          "Perception",
+          "Survival"
+        ]
+      },
+      "equipment": {
+        "1": [
+          "Greataxe",
+          "Any martial melee weapon"
+        ],
+        "2": [
+          "Handaxe (2)",
+          "Any simple weapon"
+        ],
+        "3": "An explorer's pack and javelin (4)"
+      },
+      "Rage": {
+        "Rages": 2,
+        "Rage Damage": 2,
+        "activate": "bonus action",
+        "benefits (with no heavy armor)": [
+          "advantage on Strength checks and Strength saving throws",
+          "gain Rage Damage bonus to damage roll",
+          "resistance to bludgeoning, piercing, and slashing damage"
+        ],
+        "duration": [
+          "1 minute",
+          "bonus action"
+        ]
+      },
+      "Unarmored Defense": {
+        "no armor; shield optional": "AC is 10 + Dex mod + Con mod"
+      }
     },
     "Bard": {
-
+      "quick build": {
+        "Charisma": "first",
+        "Dexterity": "second",
+        "background": "Entertainer",
+        "cantrips": [
+          "Dancing Lights",
+          "Vicious Mockery"
+        ],
+        "1st level": [
+          "Charm Person",
+          "Detect Magic",
+          "Healing Word",
+          "Thunderwave"
+        ]
+      },
+      "hit points": "1d8 + Con mod",
+      "proficiencies": [
+        "Light armor",
+        "Simple weapons",
+        "Crossbow, hand",
+        "Longsword",
+        "Rapier",
+        "Shortsword",
+        "Three (3) instruments"
+      ],
+      "saving throws": [
+        "Dexterity", "Charisma"
+      ],
+      "skills": 3,
+      "equipment": {
+        "1": [
+          "Rapier",
+          "Longsword",
+          "Any simple weapon"
+        ],
+        "2": [
+          "Diplomat's pack",
+          "Entertainer's pack"
+        ],
+        "3": [
+          "Lute",
+          "Any musical instrument"
+        ],
+        "4": "Leather armor and a dagger"
+      },
+      "spells": {
+        "slots": {
+          "cantrips": 4,
+          "1st level": 2
+        },
+        "total": 4,
+        "spellcasting ability": "Charisma",
+        "spell save DC": "8 + Cha mod + proficiency bonus",
+        "spell attack modifier": "Cha mod + proficiency bonus",
+        "Ritual Casting": "You can cast any bard spell you know as a ritual if that spell has the ritual tag.",
+        "spellcasting focus": "You can use a musical instrument as your magical focus"
+      },
+      "Bardic Inspiration": {
+        "uses": "Cha mod (minimum 1)",
+        "die": "d6",
+        "description": "On a bonus action, you pick one creature not yourself within 60 feet of you who can hear you. That creature can roll the die and add the number to one ability check, attack roll, or saving throw it makes before the DM declares whether the roll succeeded or failed."
+      }
     },
     "Cleric": {
 
@@ -34,7 +148,7 @@
 
     },
     "Wizard": {
-      
+
     }
   }
 }

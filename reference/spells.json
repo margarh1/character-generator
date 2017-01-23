@@ -2,6 +2,9 @@
   "spells": {
     "cantrips": {
       "Acid Splash": {
+        "class": [
+          "Sorcerer", "Wizard"
+        ],
         "school": "Conjuration",
         "casting time": "1 action",
         "range": "60 feet",
@@ -12,6 +15,9 @@
         "damage": "1d6"
       },
       "Blade Ward": {
+        "class": [
+          "Bard", "Sorcerer", "Warlock", "Wizard"
+        ],
         "school": "Abjuration",
         "casting time": "1 action",
         "range": "Self",
@@ -19,6 +25,9 @@
         "duration": "1 round"
       },
       "Chill Touch": {
+        "class": [
+          "Sorcerer", "Warlock", "Wizard"
+        ],
         "school": "Necromancy",
         "casting time": "1 action",
         "range": "120 feet",
@@ -26,17 +35,266 @@
         "duration": "1 round",
         "element": "Necrotic",
         "damage": "1d8"
+      },
+      "Dancing Lights": {
+        "class": [
+          "Bard", "Sorcerer", "Wizard"
+        ],
+        "school": "Evocation",
+        "casting time": "1 action",
+        "range": "120 feet",
+        "components": "V,S,M (a bit of phosphorus or wychwood, or a glowworm)",
+        "duration": "Concentration, up to 1 minute"
+      },
+      "Druidcraft": {
+        "class": "Druid",
+        "school": "Transmutation",
+        "casting time": "1 action",
+        "range": "30 feet",
+        "components": "V,S",
+        "duration": "Instantaneous"
+      },
+      "Eldritch Blast": {
+        "class": "Warlock",
+        "school": "Evocation",
+        "casting time": "1 action",
+        "range": "120 feet",
+        "components": "V,S",
+        "duration": "Instantaneous",
+        "element": "Force",
+        "damage": "1d10"
+      },
+      "Fire Bolt": {
+        "class": [
+          "Sorcerer", "Wizard"
+        ],
+        "school": "Evocation",
+        "casting time": "1 action",
+        "range": "120 feet",
+        "components": "V,S",
+        "duration": "Instantaneous",
+        "element": "Fire",
+        "damage": "1d10"
+      },
+      "Friends": {
+        "class": [
+          "Bard", "Sorcerer", "Warlock", "Wizard"
+        ],
+        "school": "Enchantment",
+        "casting time": "1 action",
+        "range": "Self",
+        "components": "S,M (a small amount of makeup applied to the face as this spell is cast)",
+        "duration": "Concentration, up to 1 minute"
+      },
+      "Guidance": {
+        "class": [
+          "Cleric", "Druid"
+        ],
+        "school": "Divination",
+        "casting time": "1 action",
+        "range": "Touch",
+        "components": "V,S",
+        "duration": "Concentration, up to 1 minute"
+      },
+      "Light": {
+        "class": [
+          "Bard", "Cleric", "Sorcerer", "Wizard"
+        ],
+        "school": "Evocation",
+        "casting time": "1 action",
+        "range": "Touch",
+        "components": "V,M (a firefly or phosphorescent moss)",
+        "duration": "1 hour"
+      },
+      "Mage Hand": {
+        "class": [
+          "Bard", "Sorcerer", "Warlock", "Wizard"
+        ],
+        "school": "Conjuration",
+        "casting time": "1 action",
+        "range": "30 feet",
+        "components": "V,S",
+        "duration": "1 minute"
+      },
+      "Mending": {
+        "class": [
+          "Bard", "Cleric", "Druid", "Sorcerer", "Wizard"
+        ],
+        "school": "Transmutation",
+        "casting time": "1 minute",
+        "range": "Touch",
+        "components": "V,S,M (two lodestones)",
+        "duration": "Instantaneous"
+      },
+      "Message": {
+        "class": [
+          "Bard", "Sorcerer", "Wizard"
+        ],
+        "school": "Transmutation",
+        "casting time": "1 action",
+        "range": "120 feet",
+        "components": "V,S,M (a short piece of copper wire)",
+        "duration": "1 round"
+      },
+      "Minor Illusion": {
+        "class": [
+          "Bard", "Sorcerer", "Warlock", "Wizard"
+        ],
+        "school": "Illusion",
+        "casting time": "1 action",
+        "range": "30 feet",
+        "components": "S,M (a bit of fleece)",
+        "duration": "1 minute"
+      },
+      "Poison Spray": {
+        "class": [
+          "Druid", "Sorcerer", "Warlock", "Wizard"
+        ],
+        "school": "Conjuration",
+        "casting time": "1 action",
+        "range": "10 feet",
+        "components": "V,S",
+        "duration": "Instantaneous",
+        "element": "Poison",
+        "save": "Constitution",
+        "damage": "1d12"
+      },
+      "Prestidigitation": {
+        "class": [
+          "Bard", "Sorcerer", "Warlock", "Wizard"
+        ],
+        "school": "Transmutation",
+        "casting time": "1 action",
+        "range": "10 feet",
+        "components": "V,S",
+        "duration": "Up to 1 hour"
+      },
+      "Produce Flame": {
+        "class": "Druid",
+        "school": "Conjuration",
+        "casting time": "1 action",
+        "range": "Self",
+        "components": "V,S",
+        "duration": "10 minutes",
+        "element": "Fire",
+        "damage": "1d8"
+      },
+      "Ray of Frost": {
+        "class": [
+          "Sorcerer", "Wizard"
+        ],
+        "school": "Evocation",
+        "casting time": "1 action",
+        "range": "60 feet",
+        "components": "V,S",
+        "duration": "Instantaneous",
+        "element": "Cold",
+        "damage": "1d8"
+      },
+      "Resistance": {
+        "class": [
+          "Cleric", "Druid"
+        ],
+        "school": "Abjuration",
+        "casting time": "1 action",
+        "range": "Touch",
+        "components": "V,S,M (a miniature cloak)",
+        "duration": "Concentration, up to 1 minute"
+      },
+      "Sacred Flame": {
+        "class": "Cleric",
+        "school": "Evocation",
+        "casting time": "1 action",
+        "range": "60 feet",
+        "components": "V,S",
+        "duration": "Instantaneous",
+        "element": "Radiant",
+        "damage": "1d8"
+      },
+      "Shillelagh": {
+        "class": "Druid",
+        "school": "Transmutation",
+        "casting time": "1 bonus action",
+        "range": "Touch",
+        "components": "V,S,M (mistletoe, a shamrock leaf, and a club or quarterstaff)",
+        "duration": "1 minute"
+      },
+      "Shocking Grasp": {
+        "class": [
+          "Sorcerer", "Wizard"
+        ],
+        "school": "Evocation",
+        "casting time": "1 action",
+        "range": "Touch",
+        "components": "V,S",
+        "duration": "Instantaneous",
+        "element": "Lightning",
+        "damage": "1d8"
+      },
+      "Spare the Dying": {
+        "class": "Cleric",
+        "school": "Necromancy",
+        "casting time": "1 action",
+        "range": "Touch",
+        "components": "V,S",
+        "duration": "Instantaneous"
+      },
+      "Thaumaturgy": {
+        "class": "Cleric",
+        "school": "Transmutation",
+        "casting time": "1 action",
+        "range": "30 feet",
+        "components": "V",
+        "duration": "Up to 1 minute"
+      },
+      "Thorn Whip": {
+        "class": "Druid",
+        "school": "Transmutation",
+        "casting time": "1 action",
+        "range": "30 feet",
+        "components": "V,S,M (the stem of a plant with thorns)",
+        "duration": "Instantaneous",
+        "element": "Piercing",
+        "damage": "1d6"
+      },
+      "True Strike": {
+        "class": [
+          "Bard", "Sorcerer", "Warlock", "Wizard"
+        ],
+        "school": "Divination",
+        "casting time": "1 action",
+        "range": "30 feet",
+        "components": "S",
+        "duration": "Concentration, up to 1 round"
+      },
+      "Vicious Mockery": {
+        "class": "Bard",
+        "school": "Enchantment",
+        "casting time": "1 action",
+        "range": "60 feet",
+        "components": "V",
+        "duration": "Instantaneous",
+        "element": "Psychic",
+        "save": "Wisdom",
+        "damage": "1d4"
       }
     },
     "1st level": {
       "Alarm": {
+        "class": [
+          "Ranger", "Wizard"
+        ],
         "school": "Abjuration",
+        "ritual": true,
         "casting time": "1 minute",
         "range": "30 feet",
         "components": "V,S,M (a tiny bell and a piece of fine silver wire)",
         "duration": "8 hours"
       },
       "Animal Friendship": {
+        "class": [
+          "Bard", "Druid", "Ranger"
+        ],
         "school": "Enchantment",
         "casting time": "1 action",
         "range": "30 feet",
@@ -45,6 +303,7 @@
         "save": "Wisdom"
       },
       "Armor of Agathys": {
+        "class": "Warlock",
         "school": "Abjuration",
         "casting time": "1 action",
         "range": "Self",
@@ -54,6 +313,7 @@
         "damage": 5
       },
       "Arms of Hadar": {
+        "class": "Warlock",
         "school": "Conjuration",
         "casting time": "1 action",
         "range": "Self (10-foot radius)",
@@ -64,6 +324,9 @@
         "damage": "2d6"
       },
       "Bane": {
+        "class": [
+          "Bard", "Cleric"
+        ],
         "school": "Enchantment",
         "casting time": "1 action",
         "range": "30 feet",
@@ -72,6 +335,9 @@
         "save": "Charisma"
       },
       "Bless": {
+        "class": [
+          "Cleric", "Paladin"
+        ],
         "school": "Enchantment",
         "casting time": "1 action",
         "range": "30 feet",
@@ -79,6 +345,9 @@
         "duration": "Concentration, up to 1 minute"
       },
       "Burning Hands": {
+        "class": [
+          "Sorcerer", "Wizard"
+        ],
         "school": "Evocation",
         "casting time": "1 action",
         "range": "Self (15-foot cone)",
@@ -89,6 +358,9 @@
         "damage": "3d6"
       },
       "Charm Person": {
+        "class": [
+          "Bard", "Druid", "Sorcerer", "Warlock", "Wizard"
+        ],
         "school": "Enchantment",
         "casting time": "1 action",
         "range": "30 feet",
@@ -97,6 +369,9 @@
         "save": "Wisdom"
       },
       "Chromatic Orb": {
+        "class": [
+          "Sorcerer", "Wizard"
+        ],
         "school": "Evocation",
         "casting time": "1 action",
         "range": "90 feet",
@@ -113,6 +388,9 @@
         "damage": "3d8"
       },
       "Color Spray": {
+        "class": [
+          "Sorcerer", "Wizard"
+        ],
         "school": "Illusion",
         "casting time": "1 action",
         "range": "Self (15-foot cone)",
@@ -121,12 +399,22 @@
         "damage": "6d10"
       },
       "Command": {
+        "class": [
+          "Cleric", "Paladin"
+        ],
         "school": "Enchantment",
         "casting time": "1 action",
         "range": "60 feet",
         "components": "V",
         "duration": "1 round",
-        "save": "Wisdom"
+        "save": "Wisdom",
+        "commands": [
+          "Approach",
+          "Drop",
+          "Flee",
+          "Grovel",
+          "Halt"
+        ]
       }
     }
   }
