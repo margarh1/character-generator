@@ -589,7 +589,122 @@
       }
     },
     "Half-elf": {
-      
+      "trait": {
+        "Charisma": 2,
+        "Two other traits": 1
+      },
+      "lifespan": 425,
+      "alignment": "Chaotic",
+      "size": "Medium",
+      "speed": 30,
+      "languages": [
+        "Common",
+        "Elvish",
+        "Another language"
+      ],
+      "height": [
+        57,
+        "2d8"
+      ],
+      "weight": [
+        110,
+        "2d4"
+      ],
+      "skills": 2,
+      "abilities": {
+        "Darkvision": [
+          "60 feet",
+          "see in dim light like it is bright light",
+          "see in darkness like it is dim light",
+          "no color, only shades of gray"
+        ],
+        "Fey Ancestry": "You have advantage on saving throws against being charmed, and magic can't put you to sleep."
+      },
+      "names": [
+        "Elf",
+        "Human"
+      ]
+    },
+    "Half-orc": {
+      "trait": {
+        "Strength": 2,
+        "Constitution": 1
+      },
+      "lifespan": 75,
+      "alignment": "Chaotic Neutral",
+      "size": "Medium",
+      "speed": 30,
+      "languages": [
+        "Common",
+        "Orc"
+      ],
+      "abilities": {
+        "Darkvision": [
+          "60 feet",
+          "see in dim light like it is bright light",
+          "see in darkness like it is dim light",
+          "no color, only shades of gray"
+        ],
+        "Menacing": "Intimidation",
+        "Relentless Endurance": "When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can't use this feature again until you finish a long rest.",
+        "Savage Attacks": "When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit."
+      },
+      "names": {
+        "male": [
+          "Dench", "Feng", "Gell", "Henk", "Holg", "Imsh", "Keth", "Krusk",
+          "Mhurren", "Ront", "Shump", "Thokk"
+        ],
+        "female": [
+          "Baggi", "Emen", "Engong", "Kansif", "Myev", "Neega", "Ovak", "Ownka",
+          "Shautha", "Sutha", "Vola", "Volen", "Yevelda"
+        ]
+      }
+    },
+    "Tiefling": {
+      "trait": {
+        "Intelligence": 1,
+        "Charisma": 2
+      },
+      "lifespan": 100,
+      "alignment": "Chaotic",
+      "size": "Medium",
+      "speed": 30,
+      "languages": [
+        "Common",
+        "Infernal"
+      ],
+      "abilities": {
+        "Darkvision": [
+          "60 feet",
+          "see in dim light like it is bright light",
+          "see in darkness like it is dim light",
+          "no color, only shades of gray"
+        ],
+        "Hellish Resistance": "resistance to fire damage",
+        "Infernal Legacy": {
+          "spellcasting ability": "Charisma",
+          "cantrip": "Thaumaturgy",
+          "2nd level": [
+            "Hellish Rebuke",
+            "Darkness"
+          ]
+        }
+      },
+      "names": {
+        "male": [
+          "Akmenos", "Amnon", "Barakas", "Damakos", "Ekemon", "Iados", "Kairon",
+          "Leucis", "Melech", "Mordai", "Morthos", "Pelaios", "Skamos", "Therais"
+        ],
+        "female": [
+          "Akta", "Anakis", "Bryseis", "Criella", "Damaia", "Ea", "Kallista",
+          "Lerissa", "Makaria", "Nemeia", "Orianna", "Phelaia", "Rieta"
+        ],
+        "concept": [
+          "Art", "Carrion", "Chant", "Creed", "Despair", "Excellence", "Fear",
+          "Glory", "Hope", "Ideal", "Music", "Nowhere", "Open", "Poetry", "Quest",
+          "Random", "Reverence", "Sorrow", "Temerity", "Torment", "Weary"
+        ]
+      }
     }
   }
 }
