@@ -2,8 +2,8 @@ class CharactersController < ApplicationController
 
   def new
     @fields = ['armor', 'backgrounds', 'equipment', 'gaming_sets', 'gods',
-            'instruments', 'languages', 'skills', 'spells', 'tools',
-            'traits', 'trinkets', 'vehicles', 'weapons']
+            'instruments', 'languages', 'levels', 'races', 'skills', 'spells',
+            'tools', 'traits', 'trinkets', 'vehicles', 'weapons']
   end
 
   def create
@@ -25,7 +25,7 @@ class CharactersController < ApplicationController
   private
 
   def character_params
-    params.require(:character).permit(:user_id, :name, :level, :background, :race, :class, :exp)
+    params.require(:character).permit(:name, :level, :background, :race, :class, :exp)
   end
 
 end

@@ -2,7 +2,6 @@
   <h1>Create New Character</h1>
 
   <%= form_for :character, url: characters_path do |f| %>
-    <%= f.hidden_field :user_id, :value => session[:user_id] %>
     <%= f.hidden_field :race, :value => 'thing' %>
     <%= f.hidden_field :class, :value => 'other thing' %>
     <%= f.hidden_field :exp, :value => 0 %>
