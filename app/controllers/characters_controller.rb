@@ -7,7 +7,6 @@ class CharactersController < ApplicationController
   end
 
   def create
-    p 'Character Params:', character_params
     new_character = Character.create(character_params)
     traits = ['Strength', 'Dexterity', 'Constitution', 'Intelligence', 'Wisdom', 'Charisma']
     traits.each do |trait|
@@ -15,7 +14,6 @@ class CharactersController < ApplicationController
       name = trait
       value = params[trait].to_i
       modifier = (value - 10)/2
-      p [name, value, modifier, character]
       Trait.create({name: name, value: value, modifier: modifier, character_id: character})
     end
     flash[:notice] = "Params sent"
@@ -25,7 +23,7 @@ class CharactersController < ApplicationController
   private
 
   def character_params
-    params.require(:character).permit(:user_id, :name, :level, :background, :race, :character_class, :exp)
+    params.require(:character).permit(:user_id, :name, :background, :race, :character_class, :exp)
   end
 
 end

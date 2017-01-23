@@ -643,7 +643,325 @@
         "element": "Radiant",
         "damage": "4d6"
       },
-      
+      "Hail of Thorns": {
+        "class": "Ranger",
+        "school": "Conjuration",
+        "casting time": "1 bonus action",
+        "range": "Self",
+        "components": "V",
+        "duration": "Concentration, up to 1 minute",
+        "element": "Piercing",
+        "save": "Dexterity",
+        "damage": "1d10"
+      },
+      "Healing Word": {
+        "class": [
+          "Bard", "Cleric", "Druid"
+        ],
+        "school": "Evocation",
+        "casting time": "1 bonus action",
+        "range": "60 feet",
+        "components": "V",
+        "duration": "Instantaneous",
+        "damage": "1d4 + spellcasting mod"
+      },
+      "Hellish Rebuke": {
+        "class": "Warlock",
+        "school": "Evocation",
+        "casting time": "Reaction",
+        "range": "60 feet",
+        "components": "V,S",
+        "duration": "Instantaneous",
+        "element": "Fire",
+        "save": "Dexterity",
+        "damage": "2d10"
+      },
+      "Heroism": {
+        "class": [
+          "Bard", "Paladin"
+        ],
+        "school": "Enchantment",
+        "casting time": "1 action",
+        "range": "Touch",
+        "components": "V,S",
+        "duration": "Concentration, up to 1 minute"
+      },
+      "Hex": {
+        "class": "Warlock",
+        "school": "Enchantment",
+        "casting time": "1 bonus action",
+        "range": "90 feet",
+        "components": "V,S,M (the petrified eye of a newt)",
+        "duration": "Concentration, up to 1 hour",
+        "element": "Necrotic",
+        "damage": "1d6"
+      },
+      "Hunter's Mark": {
+        "class": "Ranger",
+        "school": "Divination",
+        "casting time": "1 bonus action",
+        "range": "90 feet",
+        "components": "V",
+        "duration": "Concentration, up to 1 hour",
+        "damage": "1d6"
+      },
+      "Identify": {
+        "class": [
+          "Bard", "Wizard"
+        ],
+        "school": "Divination",
+        "ritual": true,
+        "casting time": "1 minute",
+        "range": "Touch",
+        "components": "V,S,M (a pearl worth at least 100 gp and an owl feather)",
+        "duration": "Instantaneous"
+      },
+      "Illusory Script": {
+        "class": [
+          "Bard", "Warlock", "Wizard"
+        ],
+        "school": "Illusion",
+        "ritual": true,
+        "casting time": "1 minute",
+        "range": "Touch",
+        "components": "S,M (a lead-based ink worth at least 10 gp, which the spell consumes)",
+        "duration": "10 days"
+      },
+      "Inflict Wounds": {
+        "class": "Cleric",
+        "school": "Necromancy",
+        "casting time": "1 action",
+        "range": "Touch",
+        "components": "V,S",
+        "duration": "Instantaneous",
+        "element": "Necrotic",
+        "damage": "3d10"
+      },
+      "Jump": {
+        "class": [
+          "Druid", "Ranger", "Sorcerer", "Wizard"
+        ],
+        "school": "Transmutation",
+        "casting time": "1 action",
+        "range": "Touch",
+        "components": "V,S,M (a grasshopper's hind leg)",
+        "duration": "1 minute"
+      },
+      "Longstrider": {
+        "class": [
+          "Bard", "Druid", "Ranger", "Wizard"
+        ],
+        "school": "Transmutation",
+        "casting time": "1 action",
+        "range": "Touch",
+        "components": "V,S,M (a pinch of dirt)",
+        "duration": "1 hour"
+      },
+      "Mage Armor": {
+        "class": [
+          "Sorcerer", "Wizard"
+        ],
+        "school": "Abjuration",
+        "casting time": "1 action",
+        "range": "Touch",
+        "components": "V,S,M (a piece of cured leather)",
+        "duration": "8 hours"
+      },
+      "Magic Missle": {
+        "class": [
+          "Sorcerer", "Wizard"
+        ],
+        "school": "Evocation",
+        "casting time": "1 action",
+        "range": "120 feet",
+        "components": "V,S",
+        "duration": "Instantaneous",
+        "damage": "1d4 + 1"
+      },
+      "Protection from Evil and Good": {
+        "class": [
+          "Cleric", "Paladin", "Warlock", "Wizard"
+        ],
+        "school": "Abjuration",
+        "casting time": "1 action",
+        "range": "Touch",
+        "components": "V,S,M (holy water or powdered silver and iron, which the spell consumes)",
+        "duration": "Concentration, up to 10 minutes"
+      },
+      "Purify Food and Drink": {
+        "class": [
+          "Cleric", "Druid", "Paladin"
+        ],
+        "school": "Transmutation",
+        "ritual": true,
+        "casting time": "1 action",
+        "range": "10 feet",
+        "components": "V,S",
+        "duration": "Instantaneous"
+      },
+      "Ray of Sickness": {
+        "class": [
+          "Sorcerer", "Wizard"
+        ],
+        "school": "Necromancy",
+        "casting time": "1 action",
+        "range": "60 feet",
+        "components": "V,S",
+        "duration": "Instantaneous",
+        "element": "Poison",
+        "save": "Constitution",
+        "damage": "2d8"
+      },
+      "Sanctuary": {
+        "class": "Cleric",
+        "school": "Abjuration",
+        "casting time": "1 bonus action",
+        "range": "30 feet",
+        "components": "V,S,M (a small silver mirror)",
+        "duration": "1 minute"
+      },
+      "Searing Smite": {
+        "class": "Paladin",
+        "school": "Evocation",
+        "casting time": "1 bonus action",
+        "range": "Self",
+        "components": "V",
+        "duration": "Concentration, up to 1 minute",
+        "element": "Fire",
+        "save": "Constitution",
+        "damage": "1d6"
+      },
+      "Shield": {
+        "class": [
+          "Sorcerer", "Wizard"
+        ],
+        "school": "Abjuration",
+        "casting time": "Reaction",
+        "range": "Self",
+        "components": "V,S",
+        "duration": "1 round"
+      },
+      "Shield of Faith": {
+        "class": [
+          "Cleric", "Paladin"
+        ],
+        "school": "Abjuration",
+        "casting time": "1 bonus action",
+        "range": "60 feet",
+        "components": "V,S,M (a small parchment with a bit of holy text written on it)",
+        "duration": "Concentration, up to 10 minutes"
+      },
+      "Silent Image": {
+        "class": [
+          "Bard", "Sorcerer", "Wizard"
+        ],
+        "school": "Illusion",
+        "casting time": "1 action",
+        "range": "60 feet",
+        "components": "V,S,M (a bit of fleece)",
+        "duration": "Concentration, up to 10 minutes",
+        "save": "Intelligence (Investigation)"
+      },
+      "Sleep": {
+        "class": [
+          "Bard", "Sorcerer", "Wizard"
+        ],
+        "school": "Enchantment",
+        "casting time": "1 action",
+        "range": "90 feet",
+        "components": "V,S,M (a pinch of fine sand, rose petals, or a cricket)",
+        "duration": "1 minute",
+        "damage": "5d8"
+      },
+      "Speak with Animals": {
+        "class": [
+          "Bard", "Druid", "Ranger"
+        ],
+        "school": "Divination", 
+        "ritual": true,
+        "casting time": "1 action",
+        "range": "Self",
+        "components": "V,S",
+        "duration": "10 minutes"
+      },
+      "Tasha's Hideous Laughter": {
+        "class": [
+          "Bard", "Wizard"
+        ],
+        "school": "Enchantment",
+        "casting time": "1 action",
+        "range": "30 feet",
+        "components": "V,S,M (tiny tarts and a feather that is waved in the air)",
+        "duration": "Concentration, up to 1 minute",
+        "save": "Wisdom"
+      },
+      "Tenser's Floating Disk": {
+        "class": "Wizard",
+        "school": "Conjuration",
+        "ritual": true,
+        "casting time": "1 action",
+        "range": "30 feet",
+        "components": "V,S,M (a drop of mercury)",
+        "duration": "1 hour"
+      },
+      "Thunderous Smite": {
+        "class": "Paladin",
+        "school": "Evocation",
+        "casting time": "1 bonus action",
+        "range": "Self",
+        "components": "V",
+        "duration": "Concentration, up to 1 minute",
+        "element": "Thunder",
+        "save": "Strength",
+        "damage": "2d6"
+      },
+      "Thunderwave": {
+        "class": [
+          "Bard", "Druid", "Sorcerer", "Wizard"
+        ],
+        "school": "Evocation",
+        "casting time": "1 action",
+        "range": "Self (15-foot cube)",
+        "components": "V,S",
+        "duration": "Instantaneous",
+        "element": "Thunder",
+        "save": "Constitution",
+        "damage": "2d8"
+      },
+      "Unseen Servant": {
+        "class": [
+          "Bard", "Warlock", "Wizard"
+        ],
+        "school": "Conjuration",
+        "ritual": true,
+        "casting time": "1 action",
+        "range": "60 feet",
+        "components": "V,S,M (a piece of string and a bit of wood)",
+        "duration": "1 hour"
+      },
+      "Witch Bolt": {
+        "class": [
+          "Sorcerer", "Warlock", "Wizard"
+        ],
+        "school": "Evocation",
+        "casting time": "1 action",
+        "range": "30 feet",
+        "components": "V,S,M (a twig from a tree that has been struck by lightning)",
+        "duration": "Concentration, up to 1 minute",
+        "element": "Lightning",
+        "damage": "1d12"
+      },
+      "Wrathful Smite": {
+        "class": "Paladin",
+        "school": "Evocation",
+        "casting time": "1 bonus action",
+        "range": "Self",
+        "components": "V",
+        "duration": "Concentration, up to 1 minute",
+        "element": "Psychic",
+        "save": "Wisdom",
+        "damage": "1d6"
+      }
     }
   }
 }

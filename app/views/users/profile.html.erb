@@ -14,8 +14,7 @@
     <% @characters.length.times do |n| %>
       <div role="tabpanel" class="tab-pane" id=<%= @characters[n].name %>>
         <p>Name: <%= @characters[n].name %></p>
-        <p>Level: <%= @characters[n].level %></p>
-        <p>EXP: <%= @characters[n].exp %></p>
+        <p>Level: <%= @characters[n].level %> | EXP: <%= @characters[n].exp %></p>
         <p>Gender: <%= @characters[n].gender %></p>
         <p>Race: <%= @characters[n].race %></p>
         <p>Class: <%= @characters[n].character_class %></p>

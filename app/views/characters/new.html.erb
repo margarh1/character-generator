@@ -10,8 +10,11 @@
           <%= f.text_field :name, class: 'form-control' %>
         </div>
         <div class="form-group">
+          <% data = JSON.parse(File.read(Dir.pwd + '/reference/levels.json')) %>
           <label for='character_level'>Level</label>
-          <%= f.number_field :level, class: 'form-control', in: 1..20, value: 1 %>
+          <%= number_field_tag :level, '1', class: 'form-inline', in: 1..20 %>
+          <label for='character_exp'>EXP</label>
+          <%= number_field_tag :exp, '0', class: 'form-inline', in: 0..355000 %>
         </div>
         <div class="form-group">
           <label for='character_race'>Race</label>
@@ -35,7 +38,8 @@
     <div class="col-md-6">
       <div data-spy="scroll" class="scroll form-check">
         <p><b>Name:</b> <span class="character_name">---</span></p>
-        <p><b>Level:</b> <span class="character_level">1</span></p>
+        <p><b>Level:</b> <span class="level">1</span> | <b>EXP:</b> <span class="exp">0</span></p>
+        <p><b>Race:</b> <span class="races">--</span></p>
         <p><b>Traits:</b></p>
         <p>Strength: <span class="Strength">10</span></p>
         <p>Dexterity: <span class="Dexterity">10</span></p>

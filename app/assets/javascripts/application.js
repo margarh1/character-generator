@@ -24,7 +24,9 @@ $(document).on('turbolinks:load', function() {
     // console.log($('#' + this.id).prop('value'));
     if (this.id.includes('backgrounds')) {
       $('.backgrounds').prop('textContent', $('#' + this.id).prop('value'));
-    } else {
+    } else if (this.id.includes('races')) {
+      $('.races').prop('textContent', $('#' + this.id).prop('value'));
+    }  else {
       $('.' + this.id).prop('textContent', $('#' + this.id).prop('value'));
     };
   });
