@@ -19,11 +19,11 @@
 $(document).on('turbolinks:load', function() {
 
   $('input').focusout(function() {
-    console.log(this);
-    console.log(this.name);
-    console.log($('#' + this.id).prop('value'));
-    if (this.id.includes('character_background')) {
-      $('.character_background').prop('textContent', $('#' + this.id).prop('value'));
+    // console.log(this);
+    // console.log(this.name);
+    // console.log($('#' + this.id).prop('value'));
+    if (this.id.includes('backgrounds')) {
+      $('.backgrounds').prop('textContent', $('#' + this.id).prop('value'));
     } else {
       $('.' + this.id).prop('textContent', $('#' + this.id).prop('value'));
     };

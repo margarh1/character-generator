@@ -2,9 +2,7 @@
   <h1>Create New Character</h1>
 
   <%= form_for :character, url: characters_path do |f| %>
-    <%= f.hidden_field :race, :value => 'thing' %>
-    <%= f.hidden_field :class, :value => 'other thing' %>
-    <%= f.hidden_field :exp, :value => 0 %>
+    <%= f.hidden_field :user_id, :value => session[:user_id] %>
     <div class="col-md-6">
       <div data-spy="scroll" class="scroll">
         <div class="form-group">
@@ -14,6 +12,10 @@
         <div class="form-group">
           <label for='character_level'>Level</label>
           <%= f.number_field :level, class: 'form-control', in: 1..20, value: 1 %>
+        </div>
+        <div class="form-group">
+          <label for='character_race'>Race</label>
+          <%= render partial: 'partials/character_form_scroll', locals: { file: 'races' } %>
         </div>
         <div class="form-group">
           <label for='character_traits'>Traits</label>
@@ -26,12 +28,7 @@
         </div>
         <div class="form-group">
           <label for='character_background'>Background</label>
-          <div data-spy="scroll" class="form-scroll">
-            <% data = JSON.parse(File.read(Dir.pwd + '/reference/backgrounds.json')) %>
-            <% data['backgrounds'].keys.each do |bg| %>
-              <%= f.radio_button :background, bg %> <%= bg %><br>
-            <% end %>
-          </div>
+          <%= render partial: 'partials/character_form_scroll', locals: { file: 'backgrounds' } %>
         </div>
       </div>
     </div>
@@ -46,7 +43,7 @@
         <p>Intelligence: <span class="Intelligence">10</span></p>
         <p>Wisdom: <span class="Wisdom">10</span></p>
         <p>Charisma: <span class="Charisma">10</span></p>
-        <p><b>Background:</b> <span class="character_background">----</span></p>
+        <p><b>Background:</b> <span class="backgrounds">----</span></p>
       </div>
     </div>
     <div class="col-md-12">

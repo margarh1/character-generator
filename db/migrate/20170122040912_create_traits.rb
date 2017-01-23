@@ -4,6 +4,7 @@ class CreateTraits < ActiveRecord::Migration[5.0]
       t.string :name
       t.integer :value
       t.integer :modifier
+      t.belongs_to :character
 
       t.timestamps
     end

@@ -24,6 +24,7 @@ class UsersController < ApplicationController
 
   def profile
     @user = User.find(current_user)
+    @characters = @user.characters
   end
 
   def edit

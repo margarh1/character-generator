@@ -16,7 +16,7 @@ class CharactersController < ApplicationController
       value = params[trait].to_i
       modifier = (value - 10)/2
       p [name, value, modifier, character]
-      # Trait.create({name: name, value: value, modifier: modifier, character_id: character})
+      Trait.create({name: name, value: value, modifier: modifier, character_id: character})
     end
     flash[:notice] = "Params sent"
     redirect_to new_character_path
@@ -25,7 +25,7 @@ class CharactersController < ApplicationController
   private
 
   def character_params
-    params.require(:character).permit(:name, :level, :background, :race, :class, :exp)
+    params.require(:character).permit(:user_id, :name, :level, :background, :race, :character_class, :exp)
   end
 
 end

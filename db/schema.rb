@@ -25,21 +25,26 @@ ActiveRecord::Schema.define(version: 20170122040912) do
 
   create_table "characters", force: :cascade do |t|
     t.string   "name"
+    t.string   "gender"
     t.integer  "level"
     t.integer  "exp"
-    t.string   "class"
+    t.string   "character_class"
     t.string   "race"
     t.string   "background"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer  "user_id"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.index ["user_id"], name: "index_characters_on_user_id", using: :btree
   end
 
   create_table "traits", force: :cascade do |t|
     t.string   "name"
     t.integer  "value"
     t.integer  "modifier"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer  "character_id"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.index ["character_id"], name: "index_traits_on_character_id", using: :btree
   end
 
   create_table "users", force: :cascade do |t|

@@ -415,7 +415,235 @@
           "Grovel",
           "Halt"
         ]
-      }
+      },
+      "Compelled Duel": {
+        "class": "Paladin",
+        "school": "Enchantment",
+        "casting time": "1 bonus action",
+        "range": "30 feet",
+        "components": "V",
+        "duration": "Concentration, up to 1 minute",
+        "save": "Wisdom"
+      },
+      "Comprehend Languages": {
+        "class": [
+          "Bard", "Sorcerer", "Warlock", "Wizard"
+        ],
+        "school": "Divination",
+        "ritual": true,
+        "casting time": "1 action",
+        "range": "Self",
+        "components": "V,S,M (a pinch of soot and salt)",
+        "duration": "1 hour"
+      },
+      "Create Water": {
+        "class": [
+          "Cleric", "Druid"
+        ],
+        "school": "Transmutation",
+        "casting time": "1 action",
+        "range": "30 feet",
+        "components": "V,S,M (a drop of water)",
+        "duration": "Instantaneous"
+      },
+      "Destroy Water": {
+        "class": [
+          "Cleric", "Druid"
+        ],
+        "school": "Transmutation",
+        "casting time": "1 action",
+        "range": "30 feet",
+        "components": "V,S,M (a few grains of sand)",
+        "duration": "Instantaneous"
+      },
+      "Cure Wounds": {
+        "class": [
+          "Bard", "Cleric", "Druid", "Paladin", "Ranger"
+        ],
+        "school": "Evocation",
+        "casting time": "1 action",
+        "range": "Touch",
+        "components": "V,S",
+        "duration": "Instantaneous",
+        "damage": "1d8 + spellcasting mod"
+      },
+      "Detect Evil and Good": {
+        "class": [
+          "Cleric", "Paladin"
+        ],
+        "school": "Divination",
+        "casting time": "1 action",
+        "range": "Self",
+        "components": "V,S",
+        "duration": "Concentration, up to 10 minutes"
+      },
+      "Detect Magic": {
+        "class": [
+          "Bard", "Cleric", "Druid", "Paladin", "Ranger", "Sorcerer", "Wizard"
+        ],
+        "school": "Divination",
+        "ritual": true,
+        "casting time": "1 action",
+        "range": "Self",
+        "components": "V,S",
+        "duration": "Concentration, up to 10 minutes"
+      },
+      "Detect Poison and Disease": {
+        "class": [
+          "Cleric", "Druid", "Paladin", "Ranger"
+        ],
+        "school": "Divination",
+        "casting time": "1 action",
+        "range": "Self",
+        "components": "V,S,M (a yew leaf)",
+        "duration": "Concentration, up to 10 minutes"
+      },
+      "Disguise Self": {
+        "class": [
+          "Bard", "Sorcerer", "Wizard"
+        ],
+        "school": "Illusion",
+        "casting time": "1 action",
+        "range": "Self",
+        "components": "V,S",
+        "duration": "1 hour"
+      },
+      "Dissonant Whispers": {
+        "class": "Bard",
+        "school": "Enchantment",
+        "casting time": "1 action",
+        "range": "60 feet",
+        "components": "V",
+        "duration": "Instantaneous",
+        "element": "Psychic",
+        "save": "Wisdom",
+        "damage": "3d6"
+      },
+      "Divine Favor": {
+        "class": "Paladin",
+        "school": "Evocation",
+        "casting time": "1 bonus action",
+        "range": "Self",
+        "components": "V,S",
+        "duration": "Concentration, up to 1 minute",
+        "element": "Radiant",
+        "damage": "1d4"
+      },
+      "Ensnaring Strike": {
+        "class": "Ranger",
+        "school": "Conjuration",
+        "casting time": "1 bonus action",
+        "range": "Self",
+        "components": "V",
+        "duration": "Concentration, up to 1 minute",
+        "element": "Piercing",
+        "save": "Strength",
+        "damage": "1d6"
+      },
+      "Entangle": {
+        "class": "Druid",
+        "school": "Conjuration",
+        "casting time": "1 action",
+        "range": "90 feet",
+        "components": "V,S",
+        "duration": "Concentration, up to 1 minute",
+        "save": "Strength"
+      },
+      "Expeditious Retreat": {
+        "class": [
+          "Sorcerer", "Warlock", "Wizard"
+        ],
+        "school": "Transmutation",
+        "casting time": "1 bonus action",
+        "range": "Self",
+        "components": "V,S",
+        "duration": "Concentration, up to 10 minutes"
+      },
+      "Faerie Fire": {
+        "class": [
+          "Bard", "Druid"
+        ],
+        "school": "Evocation",
+        "casting time": "1 action",
+        "range": "60 feet",
+        "components": "V",
+        "duration": "Concentration, up to 1 minute",
+        "save": "Dexterity"
+      },
+      "False Life": {
+        "class": [
+          "Sorcerer", "Wizard"
+        ],
+        "school": "Necromancy",
+        "casting time": "1 action",
+        "range": "Self",
+        "components": "V,S,M (a small amount of alcohol or distilled spirits)",
+        "duration": "1 hour",
+        "damage": "1d4 + 4"
+      },
+      "Feather Fall": {
+        "class": [
+          "Bard", "Sorcerer", "Wizard"
+        ],
+        "school": "Transmutation",
+        "casting time": "Reaction",
+        "range": "60 feet",
+        "components": "V,M (a small feather or piece of down)",
+        "duration": "1 minute"
+      },
+      "Find Familiar": {
+        "class": "Wizard",
+        "school": "Conjuration",
+        "ritual": true,
+        "casting time": "1 hour",
+        "range": "10 feet",
+        "components": "V,S,M (10 gp worth of charcoal, incense, and herbs that must be consumed by fire in a brass brazier",
+        "duration": "Instantaneous",
+        "familiars": [
+          "Bat", "Cat", "Crab", "Frog", "Toad", "Hawk", "Lizard", "Octopus", "Owl", "Poisonous snake",
+          "Fish (Quipper)", "Rat", "Raven", "Sea horse", "Spider", "Weasel"
+        ]
+      },
+      "Fog Cloud": {
+        "class": [
+          "Druid", "Ranger", "Sorcerer", "Wizard"
+        ],
+        "school": "Conjuration",
+        "casting time": "1 action",
+        "range": "120 feet",
+        "components": "V,S",
+        "duration": "Concentration, up to 1 hour"
+      },
+      "Goodberry": {
+        "class": [
+          "Druid", "Ranger"
+        ],
+        "school": "Transmutation",
+        "casting time": "1 action",
+        "range": "Touch",
+        "components": "V,S,M (a sprig of mistletoe)",
+        "duration": "Instantaneous"
+      },
+      "Grease": {
+        "class": "Wizard",
+        "school": "Conjuration",
+        "casting time": "1 action",
+        "range": "60 feet",
+        "components": "V,S,M (a bit of pork rind or butter)",
+        "duration": "1 minute",
+        "save": "Dexterity"
+      },
+      "Guiding Bolt": {
+        "class": "Cleric",
+        "school": "Evocation",
+        "casting time": "1 action",
+        "range": "120 feet",
+        "components": "V,S",
+        "duration": "1 round",
+        "element": "Radiant",
+        "damage": "4d6"
+      },
+      
     }
   }
 }
