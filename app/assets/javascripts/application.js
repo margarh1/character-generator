@@ -19,16 +19,22 @@
 $(document).on('turbolinks:load', function() {
 
   $('input').focusout(function() {
-    // console.log(this);
-    // console.log(this.name);
-    // console.log($('#' + this.id).prop('value'));
-    if (this.id.includes('backgrounds')) {
-      $('.backgrounds').prop('textContent', $('#' + this.id).prop('value'));
-    } else if (this.id.includes('races')) {
-      $('.races').prop('textContent', $('#' + this.id).prop('value'));
-    }  else {
+    console.log(this);
+    console.log(this.name);
+    console.log($('#' + this.id).prop('value'));
+    console.log($('#' + this.id).prop('checked'));
+    if ((this.id.includes('skills')) && ($('#' + this.id).prop('checked'))) {
+      $('.skills').append($('#' + this.id).prop('value') + ', ');
+    } else {
       $('.' + this.id).prop('textContent', $('#' + this.id).prop('value'));
     };
+  });
+
+  $('select').focusout(function() {
+    console.log(this);
+    console.log(this.name);
+    console.log($('#' + this.id).prop('value'));
+    $('.' + this.id).prop('textContent', $('#' + this.id).prop('value'));
   });
 
 });

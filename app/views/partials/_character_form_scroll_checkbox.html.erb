@@ -1,6 +1,6 @@
 <div data-spy="scroll" class="form-scroll">
   <% data = JSON.parse(File.read(Dir.pwd + "/reference/#{file}.json")) %>
-  <% data[file].keys.each do |key| %>
-    <%= radio_button_tag file, key %> <%= key %><br>
+  <% data[file].keys.each do |item| %>
+    <%= check_box_tag "#{file}_#{item}", item %> <%= item %><br>
   <% end %>
 </div>
