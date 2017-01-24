@@ -170,7 +170,7 @@
           "cantrips": 3,
           "1st level": 2
         },
-        "total": "Wis mod + Cleric level (minimum 1)",
+        "total": "Wis mod + Cleric level",
         "spellcasting ability": "Wisdom",
         "spell save DC": "8 + Wis mod + proficiency bonus",
         "spell attack mod": "Wis mod + proficiency bonus",
@@ -253,10 +253,110 @@
       }
     },
     "Druid": {
-
+      "quick build": {
+        "Wisdom": "first",
+        "Constitution": "second",
+        "background": "Hermit"
+      },
+      "hit points": "1d8 + Con mod",
+      "proficiencies": [
+        "Light armor",
+        "Medium armor",
+        "Shield",
+        "Club",
+        "Dagger",
+        "Dart",
+        "Javelin",
+        "Mace",
+        "Quarterstaff",
+        "Scimitar",
+        "Sickle",
+        "Sling",
+        "Spear",
+        "Herbalism kit"
+      ],
+      "saving throws": [
+        "Intelligence", "Wisdom"
+      ],
+      "skills": {
+        "2": [
+          "Arcana", "Animal Handling", "Insight", "Medicine", "Nature",
+          "Perception", "Religion", "Survival"
+        ]
+      },
+      "equipment": {
+        "1": [
+          "Wooden shield",
+          "Any simple weapon"
+        ],
+        "2": [
+          "Scimitar",
+          "Any simple melee weapon"
+        ],
+        "3": "Leather armor, an explorer's pack, and a druidic focus"
+      },
+      "languages": "Druidic",
+      "spells": {
+        "slots": {
+          "cantrips": 2,
+          "1st level": 2
+        },
+        "total": "Wis mod + Druid level",
+        "spellcasting ability": "Wisdom",
+        "spell save DC": "8 + Wis mod + proficiency bonus",
+        "spell attack mod": "Wis mod + proficiency bonus",
+        "Ritual Casting": "You can cast any druid spell you know as a ritual if that spell has the ritual tag.",
+        "spellcasting focus": "You can use a druidic as your spellcasting focus."
+      }
     },
     "Fighter": {
-
+      "quick build": {
+        "Strength/Dexterity": "first",
+        "Constitution/Intelligence": "second",
+        "background": "Soldier"
+      },
+      "hit points": "1d10 + Con mod",
+      "proficiencies": [
+        "Armor",
+        "Simple weapons",
+        "Martial weapons"
+      ],
+      "saving throws": [
+        "Strength", "Constitution"
+      ],
+      "skills": {
+        "2": [
+          "Acrobatics", "Animal Handling", "Athletics", "History", "Insight",
+          "Intimidation", "Perception", "Survival"
+        ]
+      },
+      "equipment": {
+        "1": [
+          "Chain mail",
+          "Leather, longbow, and 20 arros"
+        ],
+        "2": [
+          "Any martial weapon and a shield",
+          "Martial weapons (2)"
+        ],
+        "3": [
+          "Crossbow,light and 20 bolts",
+          "Handaxe (2)"
+        ],
+        "4": [
+          "Dungeoneer's pack",
+          "Explorer's pack"
+        ]
+      },
+      "fighting style": {
+        "Archery": "+2 to attack rolls with ranged weapons",
+        "Defense": "+1 AC when wearing armor",
+        "Dueling": "+2 to damage rolls when wielding a melee weapon one-handed",
+        "Great Weapon Fighting": "When using two-handed or versatile weapon, you can reroll a 1 or 2 on damage die, but must use the new roll",
+        "Protection": "You can use your reaction to impose disadvantage on an attacking creature within 5 feet of you, if you are wielding a shield",
+        "Two-Weapon Fighting": "You can add your ability mod to the damage of the second attack"
+      },
+      "Second Wind": "You can use a bonus action to regain hit points equal to 1d10 + Fighter level"
     },
     "Monk": {
 

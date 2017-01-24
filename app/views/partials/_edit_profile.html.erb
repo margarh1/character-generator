@@ -1,0 +1,17 @@
+<div class="profile-panel">
+  <%= form_for @user, url: profile_path do |f| %>
+    <h1><%= f.text_field :username, class: 'form-control username' %></h1>
+    <div class="profile-pic">
+      <%= image_tag('/default_profile_img.png', class: 'img-responsive img-rounded profile-img') %>
+    </div>
+    <div class="about-me">
+      <label>Email:</label> <%= f.text_field :email, class: 'form-inline' %>
+      <h4>About Me</h4>
+      <%= f.text_area :about_me, size: "32x10" %>
+      
+      <div class="profile-buttons">
+        <%= f.submit("Save Changes", class: 'btn btn-success') %> <%= link_to("Cancel", profile_path, class: 'btn btn-default') %>
+      </div>
+    </div>
+  <% end %>
+</div>

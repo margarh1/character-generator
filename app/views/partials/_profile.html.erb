@@ -6,7 +6,7 @@
   <div class="about-me">
     <label>Email:</label> <%= @user.email %>
     <h4>About Me</h4>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    <%= @user.about_me %>
     
     <div class="profile-buttons">
       <%= link_to("Edit", edit_path, class: 'btn btn-primary') %> <%= link_to("Delete", profile_path, :method => :delete, data: {confirm: 'Are you sure you want to delete your profile?'}, class: 'btn btn-danger') %>

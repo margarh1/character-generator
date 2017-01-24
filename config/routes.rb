@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   get '/profile' => 'users#profile'
   get '/edit' => 'users#edit'
   put '/profile' => 'users#update'
+  patch '/profile' => 'users#update'
   delete '/profile' => 'users#destroy'
 
   get '/characters/new' => 'characters#new', as: 'new_character'

@@ -22,7 +22,7 @@
         </div>
         <div class="form-group">
           <label for='character_race'>Race</label>
-           <% data = JSON.parse(File.read(Dir.pwd + "/reference/races.json")) %>
+          <% data = JSON.parse(File.read(Dir.pwd + "/reference/races.json")) %>
           <%= f.select(:race, data['races'].keys) %>
         </div>
         <div class="form-group">

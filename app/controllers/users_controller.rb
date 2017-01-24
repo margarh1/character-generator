@@ -8,6 +8,7 @@ class UsersController < ApplicationController
 
   def create
     user = User.new(user_params)
+    user.update({about_me: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec."})
     if user.save
       flash[:success] = 'Successfully signed up!'
       session[:user_id] = user.id
@@ -28,9 +29,19 @@ class UsersController < ApplicationController
   end
 
   def edit
+    @user = User.find(current_user)
+    @characters = @user.characters
   end
 
   def update
+    updated_user = User.find(current_user)
+    if updated_user.update(user_params)
+      flash[:success] = 'Successfully updated your profile!'
+      redirect_to profile_path
+    else
+      flash[:error] = updated_user.errors.full_messages.join("\n")
+      redirect_to edit_path
+    end
   end
 
   def destroy
