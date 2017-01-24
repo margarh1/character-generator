@@ -1,6 +1,7 @@
 class SessionsController < ApplicationController
 
-  before_action :already_signed_in, only: [:new]
+  before_action :already_signed_in, only: [:new, :create]
+  before_action :authorize, only: [:reference]
 
   def root
     redirect_to signup_path
