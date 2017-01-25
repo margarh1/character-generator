@@ -19,6 +19,7 @@ Rails.application.routes.draw do
   post '/characters' => 'characters#create'
 
   get '/reference' => 'sessions#reference'
+  get '/reference/:title' => 'sessions#reference_show'
   get '*path' => 'sessions#nonexistent'
 
 end

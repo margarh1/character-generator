@@ -41,6 +41,11 @@ class SessionsController < ApplicationController
             'vehicles', 'weapons']
   end
 
+  def reference_show
+    @file = File.read(Dir.pwd + "/reference/#{params[:title]}.json")
+    render :json => @file
+  end
+
   private
 
   def username
