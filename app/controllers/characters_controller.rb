@@ -31,7 +31,7 @@ class CharactersController < ApplicationController
               proficient = false
               proficient = true if params["skills_#{skill}"] != nil && params["skills_#{skill}"].include?(skill)
               proficient = true if backgrounds[bg]['skills'].include?(skill)
-              p proficient
+              p name, proficient
               # bonus = Trait.where({character_id: character, name: skill_trait}).first[:modifier]
             #   Skill.create({name: name, proficient: proficient, bonus: bonus, character_id: character})
             end

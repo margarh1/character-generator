@@ -35,13 +35,6 @@ class SessionsController < ApplicationController
   end
 
   def reference
-    @tabs = ['alignments', 'armor', 'backgrounds', 'classes', 'equipment',
-            'gaming_sets', 'gods', 'instruments', 'languages', 'levels',
-            'races', 'skills', 'spells', 'tools', 'traits', 'trinkets',
-            'vehicles', 'weapons']
-  end
-
-  def reference_show
     @file = File.read(Dir.pwd + "/reference/#{params[:title]}.json")
     render :json => @file
   end

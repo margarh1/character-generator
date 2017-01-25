@@ -10,7 +10,6 @@
           <%= f.text_field :name, class: 'form-control' %>
         </div>
         <div class="form-group">
-          <% data = JSON.parse(File.read(Dir.pwd + '/reference/levels.json')) %>
           <label for='character_level'>Level</label>
           <%= f.number_field :level, value: 1, class: 'form-inline', in: 1..20 %>
           <label for='character_exp'>EXP</label>
@@ -23,7 +22,7 @@
         <div class="form-group">
           <label for='character_race'>Race</label>
           <% data = JSON.parse(File.read(Dir.pwd + "/reference/races.json")) %>
-          <%= f.select(:race, data['races'].keys) %>
+          <%= f.select(:race, data['races'].keys, onChange: 'get_data(races);') %>
         </div>
         <div class="form-group">
           <label for='character_traits'>Traits</label>

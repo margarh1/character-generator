@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
 
-  # regular routes
   root 'sessions#root'
 
   get '/login' => 'sessions#new'
@@ -18,8 +17,7 @@ Rails.application.routes.draw do
   get '/characters/new' => 'characters#new', as: 'new_character'
   post '/characters' => 'characters#create'
 
-  get '/reference' => 'sessions#reference'
-  get '/reference/:title' => 'sessions#reference_show'
+  get '/reference/:title' => 'sessions#reference'
   get '*path' => 'sessions#nonexistent'
 
 end
