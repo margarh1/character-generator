@@ -51,6 +51,7 @@ ActiveRecord::Schema.define(version: 20170124001009) do
     t.string   "name"
     t.integer  "value"
     t.integer  "modifier"
+    t.boolean  "saving_throw"
     t.integer  "character_id"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false

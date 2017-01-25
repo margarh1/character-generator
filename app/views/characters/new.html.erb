@@ -40,6 +40,11 @@
           <%= f.select(:background, data['backgrounds'].keys) %>
         </div>
         <div class="form-group">
+          <label for='character_character_class'>Class</label>
+          <% data = JSON.parse(File.read(Dir.pwd + "/reference/classes.json")) %>
+          <%= f.select(:character_class, data['classes'].keys) %>
+        </div>
+        <div class="form-group">
           <label for='character_skills'>Skills</label>
           <%= render partial: 'partials/character_form_scroll_checkbox', locals: { file: 'skills' } %>
         </div>

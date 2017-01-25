@@ -809,20 +809,20 @@
           "Explorer's pack"
         ],
         "4": "Spellbook"
-      }
-    },
-    "spells": {
-      "slots": {
-        "cantrips": 3,
-        "1st level": 2
       },
-      "total": 6,
-      "spellcasting ability": "Intelligence",
-      "spell save DC": "8 + Int mod + proficiency bonus",
-      "spell attack mod": "Int mod + proficiency bonus",
-      "Ritual Casting": "You can cast any wizard spell you know as a ritual if that spell has the ritual tag.",
-      "spellcasting focus": "You can use an arcane focus as your spellcasting focus"
-    },
-    "Arcane Recovery": "Once per day when you finish a short rest, you can choose expended spell slots less than or equal to half your wizard level (rounded up) to recover, provided none of the spell slots are higher than 5th level"
+      "spells": {
+        "slots": {
+          "cantrips": 3,
+          "1st level": 2
+        },
+        "total": 6,
+        "spellcasting ability": "Intelligence",
+        "spell save DC": "8 + Int mod + proficiency bonus",
+        "spell attack mod": "Int mod + proficiency bonus",
+        "Ritual Casting": "You can cast any wizard spell you know as a ritual if that spell has the ritual tag.",
+        "spellcasting focus": "You can use an arcane focus as your spellcasting focus"
+      },
+      "Arcane Recovery": "Once per day when you finish a short rest, you can choose expended spell slots less than or equal to half your wizard level (rounded up) to recover, provided none of the spell slots are higher than 5th level"
+    }
   }
 }

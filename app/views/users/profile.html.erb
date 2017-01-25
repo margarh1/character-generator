@@ -15,14 +15,18 @@
       <div role="tabpanel" class="tab-pane" id=<%= @characters[n].name %>>
         <p>Name: <%= @characters[n].name.gsub('-', ' ') %></p>
         <p>Level: <%= @characters[n].level %> | EXP: <%= @characters[n].exp %></p>
-        <p>Traits:</p>
-        <% @characters[n].traits.each do |trait| %>
-          <p><%= trait.name %>: <%= trait.value %>; Mod: <%= trait.modifier %></p>
-        <% end %>
         <p>Gender: <%= @characters[n].gender %></p>
         <p>Race: <%= @characters[n].race %></p>
         <p>Class: <%= @characters[n].character_class %></p>
         <p>Background: <%= @characters[n].background %></p>
+        <p>Traits:</p>
+        <% @characters[n].traits.each do |trait| %>
+          <p><%= trait.name %>: <%= trait.value %>; Mod: <%= trait.modifier %>; Saving Throw: <%= trait.saving_throw %></p>
+        <% end %>
+        <p>Skills:</p>
+        <% @characters[n].skills.each do |skill| %>
+          <p><%= skill.name %>: <%= skill.bonus %></p>
+        <% end %>
       </div>
     <% end %>
   </div>

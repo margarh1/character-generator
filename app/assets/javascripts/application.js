@@ -21,20 +21,20 @@ $(document).on('turbolinks:load', function() {
   $('input').focusout(function() {
     console.log(this);
     console.log(this.name);
-    console.log($('#' + this.id).prop('value'));
+    console.log($('#' + this.id).val());
     console.log($('#' + this.id).prop('checked'));
     if ((this.id.includes('skills')) && ($('#' + this.id).prop('checked'))) {
-      $('.skills').append($('#' + this.id).prop('value') + ', ');
+      $('.skills').append($('#' + this.id).val() + ', ');
     } else {
-      $('.' + this.id).prop('textContent', $('#' + this.id).prop('value'));
+      $('.' + this.id).text($('#' + this.id).prop('value'));
     };
   });
 
   $('select').focusout(function() {
     console.log(this);
     console.log(this.name);
-    console.log($('#' + this.id).prop('value'));
-    $('.' + this.id).prop('textContent', $('#' + this.id).prop('value'));
+    console.log($('#' + this.id).val());
+    $('.' + this.id).text($('#' + this.id).prop('value'));
   });
 
 });

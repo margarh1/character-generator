@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  # regular routes
   root 'sessions#root'
 
   get '/login' => 'sessions#new'
@@ -8,7 +9,6 @@ Rails.application.routes.draw do
 
   get '/signup' => 'users#new'
   post '/users' => 'users#create'
-  get '/users/:username' => 'users#show'
   get '/profile' => 'users#profile'
   get '/edit' => 'users#edit'
   put '/profile' => 'users#update'
@@ -17,7 +17,6 @@ Rails.application.routes.draw do
 
   get '/characters/new' => 'characters#new', as: 'new_character'
   post '/characters' => 'characters#create'
-  get '/characters/:name' => 'characters#show', as: 'character'
 
   get '/reference' => 'sessions#reference'
   get '*path' => 'sessions#nonexistent'
