@@ -18,6 +18,17 @@
 
 $(document).on('turbolinks:load', function() {
 
+  $.ajax({
+    method: 'GET',
+    url: '/reference/backgrounds',
+    success: onSuccess,
+    error: 'Still not fucking working, you ass'
+  });
+
+  function onSuccess(json) {
+    console.log(json.backgrounds);
+  };
+
   $('input').focusout(function() {
     console.log(this);
     console.log(this.name);
