@@ -7,7 +7,13 @@
     <% @characters.length.times do |n| %>
       <li role="presentation"><a href=<%= "#" + @characters[n].name %> aria-controls=<%= @characters[n].name %> role="tab" data-toggle="tab"><%= @characters[n].name.gsub('-', ' ') %></a></li>
     <% end %>
-    <li role="presentation"><a href="/characters/new" aria-controls="new character" role="tab"><span class="glyphicon glyphicon-plus"></span></a></li>
+    <li role="presentation" class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="character-create"><span class="glyphicon glyphicon-plus"></span></a>
+      <ul class="dropdown-menu" aria-labelledby="character-create">
+        <li><a href=<%= new_character_path %>>Create Character</a></li>
+        <li><a href=<%= generate_character_path %>>Generate Character</a></li>
+      </ul>
+    </li>
   </ul>
 
   <div class="tab-content">
@@ -25,7 +31,7 @@
         <% end %>
         <p>Skills:</p>
         <% @characters[n].skills.each do |skill| %>
-          <p><%= skill.name %>: <%= skill.bonus %></p>
+          <p><%= skill.name %>: <%= skill.bonus %>; Proficient: <%= skill.proficient %></p>
         <% end %>
       </div>
     <% end %>

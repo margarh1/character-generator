@@ -20,7 +20,7 @@ $(document).on('turbolinks:load', function() {
   // form-triggered events
   var skills_str = [];
 
-  $('#character_name, #character_gender, #Strength, #Dexterity, #Constitution, #Intelligence, #Wisdom, #Charisma').change(function() {
+  $('#character_character_class, #character_name, #character_gender, #Strength, #Dexterity, #Constitution, #Intelligence, #Wisdom, #Charisma').change(function() {
     console.log(this);
     // console.log(this.name);
     // console.log($('#' + this.id).val());
@@ -51,6 +51,8 @@ $(document).on('turbolinks:load', function() {
 
   var has_background = false;
   $('#character_background').change(function() {
+    var bg = $('#' + this.id).val();
+    get_data('backgrounds');
     // unchecks, removes, and re-enables skills
     if (has_background) {
       for (old_skill of data[$('.character_background').text()]['skills']) {
@@ -61,8 +63,6 @@ $(document).on('turbolinks:load', function() {
         });
       };
     };
-    var bg = $('#' + this.id).val();
-    get_data('backgrounds');
     // checks, disables, and adds associated skills
     for (skill of data[bg]['skills']) {
       $('input[name^="skills_' + skill + '"]').prop('checked', true);
@@ -74,8 +74,65 @@ $(document).on('turbolinks:load', function() {
     has_background = true;
   });
 
+  var old_race;
+  var old_subrace;
   $('#character_race').change(function() {
+    var race = $('#' + this.id).val().split(' - ')[0];
+    var subrace = $('#' + this.id).val().split(' - ')[1];
+    get_data('races');
+    // removes race modifiers from traits
+    if (old_race != null) {
+      for (trait of Object.keys(data[old_race]['trait'])) {
+        var current = Number($('#' + trait).val());
+        var bonus = data[old_race]['trait'][trait];
+        $('#' + trait).val(current - bonus);
+        $('.' + trait).text($('#' - trait).val());
+      }
+      if (old_race === 'Half-orc') {
+        $('input[name^="skills_Intimidation"]').prop('checked', false);
+        $('input[name^="skills_Intimidation"]').prop('disabled', false);
+        skills_str = skills_str.filter(function(skill) {
+          return skill != 'Intimidation'
+        });
+        $('.skills').text(skills_str.join(', '));
+      }
+    }
+    if (old_subrace != null) {
+      for (trait of Object.keys(data[old_race]['subraces'][old_subrace]['trait'])) {
+        var current = Number($('#' + trait).val());
+        var bonus = data[old_race]['subraces'][old_subrace]['trait'][trait];
+        $('#' + trait).val(current - bonus);
+        $('.' + trait).text($('#' - trait).val());
+      };
+    };
+    // adds race modifiers to traits
+    for (trait of Object.keys(data[race]['trait'])) {
+      var current = Number($('#' + trait).val());
+      var bonus = data[race]['trait'][trait];
+      $('#' + trait).val(current + bonus);
+      $('.' + trait).text($('#' + trait).val());
+    }
+    if (subrace != null) {
+      for (trait of Object.keys(data[race]['subraces'][subrace]['trait'])) {
+        var current = Number($('#' + trait).val());
+        var bonus = data[race]['subraces'][subrace]['trait'][trait];
+        $('#' + trait).val(current + bonus);
+        $('.' + trait).text($('#' + trait).val());
+      };
+    };
+    if (race === 'Half-orc') {
+      $('input[name^="skills_Intimidation"]').prop('checked', true);
+      $('input[name^="skills_Intimidation"]').prop('disabled', true);
+      skills_str.push('Intimidation');
+      $('.skills').text(skills_str.join(', '));
+    }
+    $('.' + this.id).text($('#' + this.id).prop('value'));
+    old_race = race;
+    old_subrace = subrace;
+  });
 
+  $('input, select').change(function() {
+    // check_skills();
   });
 
   // data binding callbacks
@@ -117,6 +174,39 @@ $(document).on('turbolinks:load', function() {
         };
       };
     };
+  };
+
+  // checking skills
+  function check_skills() {
+    var race_skills = 0;
+    var class_skills = 0;
+    var background_skills = 0;
+
+    var c_class = $('.character_character_class').text();
+    if (c_class != '----') {
+      get_data('classes');
+      if (c_class === 'Bard') {
+        class_skills = data[c_class]['skills']
+      } else {
+        class_skills = Number(Object.keys(data[c_class]['skills'])[0]);
+      };
+    };
+
+    var bg = $('.character_background').text();
+    if (bg != '----') {
+      get_data('backgrounds');
+      background_skills = data[bg]['skills'].length;
+    };
+
+    var race = $('.character_race').text();
+    if (race === 'Half-elf') {
+      race_skills = 2;
+    } else if (race === 'Half-orc') {
+      race_skills = 1;
+    };
+
+    var total_skills = race_skills + class_skills + background_skills;
+    console.log([race_skills, class_skills, background_skills])
   };
 
 });

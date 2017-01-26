@@ -1,3 +1,3 @@
 class Trait < ApplicationRecord
-  belongs_to :character, dependent: :destroy
+  belongs_to :character
 end

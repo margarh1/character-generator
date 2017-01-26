@@ -15,7 +15,9 @@ Rails.application.routes.draw do
   delete '/profile' => 'users#destroy'
 
   get '/characters/new' => 'characters#new', as: 'new_character'
+  get '/characters/new/random' => 'characters#generate', as: 'generate_character'
   post '/characters' => 'characters#create'
+  delete '/characters/:name' => 'characters#destroy'
 
   get '/reference/:title' => 'sessions#reference'
   get '*path' => 'sessions#nonexistent'

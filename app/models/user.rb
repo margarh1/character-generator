@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  has_many :characters
+  has_many :characters, dependent: :destroy
 
   validates :username, presence: true
   validates :email, length: { maximum: 255 }, presence: true, format: { with: /\w+@\w+\.\w+/}, uniqueness: true
