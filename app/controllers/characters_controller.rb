@@ -46,7 +46,7 @@ class CharactersController < ApplicationController
         end
       end
     end
-    flash[:success] = "#{new_character.name} was created!"
+    flash[:success] = "#{new_character.name.gsub('-', ' ')} was created!"
     redirect_to profile_path
   end
 
@@ -168,7 +168,7 @@ class CharactersController < ApplicationController
       end
     end
 
-    @generated_stats = [{'Strength': str}, {'Dexterity': dex}, {'Constitution': con}, {'Intelligence': int}, {'Wisdom': wis}, {'Charisma': cha}]
+    @generated_stats = [['Strength', str], ['Dexterity', dex], ['Constitution', con], ['Intelligence', int], ['Wisdom', wis], ['Charisma', cha]]
     @generated_character = Character.new({user_id: current_user.id, name: c_name, level: 1, exp: 0, gender: c_gender, race: c_race, background: c_background, character_class: c_class})
     p @generated_stats
     p @generated_character

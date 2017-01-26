@@ -86,7 +86,7 @@ $(document).on('turbolinks:load', function() {
         var current = Number($('#' + trait).val());
         var bonus = data[old_race]['trait'][trait];
         $('#' + trait).val(current - bonus);
-        $('.' + trait).text($('#' - trait).val());
+        $('.' + trait).text($('#' + trait).val());
       }
       if (old_race === 'Half-orc') {
         $('input[name^="skills_Intimidation"]').prop('checked', false);
@@ -131,9 +131,9 @@ $(document).on('turbolinks:load', function() {
     old_subrace = subrace;
   });
 
-  $('input, select').change(function() {
+  // $('input, select').change(function() {
     // check_skills();
-  });
+  // });
 
   // data binding callbacks
   var data;

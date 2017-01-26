@@ -26,9 +26,12 @@
         <div class="form-group">
           <label for='character_traits'>Traits</label>
           <div>
-            <% @traits.each do |trait, idx| %>
-            <%= @generated_stats %>
-              <%= trait %>: <%= number_field_tag trait, '10', class: 'form-inline', in: 1..20 %><br>
+            <% @generated_stats.each do |stat| %>
+              <% @traits.each do |trait| %>
+                <% if stat.first == trait %>
+                  <%= trait %>: <%= number_field_tag trait, '10', class: 'form-inline', in: 1..20, value: stat.last %><br>
+                <% end %>
+              <% end %>
             <% end %>
           </div>
         </div>
