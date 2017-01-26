@@ -15,6 +15,7 @@
 //= require turbolinks
 //= require bootstrap-3.3.7.min
 //= require_tree .
+//= require_self
 
 $(document).on('turbolinks:load', function() {
   // form-triggered events
