@@ -21,10 +21,6 @@ $(document).on('turbolinks:load', function() {
   var skills_str = [];
 
   $('#character_character_class, #character_name, #character_gender, #Strength, #Dexterity, #Constitution, #Intelligence, #Wisdom, #Charisma').change(function() {
-    console.log(this);
-    // console.log(this.name);
-    // console.log($('#' + this.id).val());
-    // console.log($('#' + this.id).prop('checked'));
     $('.' + this.id).text($('#' + this.id).prop('value'));
   });
 
@@ -59,7 +55,7 @@ $(document).on('turbolinks:load', function() {
         $('input[name^="skills_' + old_skill + '"]').prop('checked', false);
         $('input[name^="skills_' + old_skill + '"]').prop('disabled', false);
         skills_str = skills_str.filter(function(skill) {
-          return skill != old_skill
+          return skill != old_skill;
         });
       };
     };
@@ -92,7 +88,7 @@ $(document).on('turbolinks:load', function() {
         $('input[name^="skills_Intimidation"]').prop('checked', false);
         $('input[name^="skills_Intimidation"]').prop('disabled', false);
         skills_str = skills_str.filter(function(skill) {
-          return skill != 'Intimidation'
+          return skill != 'Intimidation';
         });
         $('.skills').text(skills_str.join(', '));
       }
@@ -131,9 +127,6 @@ $(document).on('turbolinks:load', function() {
     old_subrace = subrace;
   });
 
-  // $('input, select').change(function() {
-    // check_skills();
-  // });
 
   // data binding callbacks
   var data;
@@ -149,7 +142,6 @@ $(document).on('turbolinks:load', function() {
 
     function onSuccess(json) {
       data = json[file_name];
-      // console.log(data);
     };
 
     function onError(xhr, status, errorThrown) {
@@ -186,7 +178,7 @@ $(document).on('turbolinks:load', function() {
     if (c_class != '----') {
       get_data('classes');
       if (c_class === 'Bard') {
-        class_skills = data[c_class]['skills']
+        class_skills = data[c_class]['skills'];
       } else {
         class_skills = Number(Object.keys(data[c_class]['skills'])[0]);
       };
@@ -206,7 +198,6 @@ $(document).on('turbolinks:load', function() {
     };
 
     var total_skills = race_skills + class_skills + background_skills;
-    console.log([race_skills, class_skills, background_skills])
   };
 
 });
