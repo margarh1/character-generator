@@ -50,10 +50,9 @@ $(document).on('turbolinks:load', function() {
   $('#character_background').change(function() {
     var bg = $('#' + this.id).val();
     get_data('backgrounds');
-    var old_bg = $('.character_background').text();
     // unchecks, removes, and re-enables skills
-    if (has_background == true) {
-      for (old_skill of data[old_bg]['skills']) {
+    if (has_background) {
+      for (old_skill of data[$('.character_background').text()]['skills']) {
         $('input[name^="skills_' + old_skill + '"]').prop('checked', false);
         $('input[name^="skills_' + old_skill + '"]').prop('disabled', false);
         skills_str = skills_str.filter(function(skill) {

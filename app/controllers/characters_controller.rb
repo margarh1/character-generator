@@ -170,9 +170,6 @@ class CharactersController < ApplicationController
 
     @generated_stats = [['Strength', str], ['Dexterity', dex], ['Constitution', con], ['Intelligence', int], ['Wisdom', wis], ['Charisma', cha]]
     @generated_character = Character.new({user_id: current_user.id, name: c_name, level: 1, exp: 0, gender: c_gender, race: c_race, background: c_background, character_class: c_class})
-    p @generated_stats
-    p @generated_character
-    # render create
   end
 
   def destroy

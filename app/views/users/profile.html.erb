@@ -27,11 +27,14 @@
         <p>Background: <%= @characters[n].background %></p>
         <p>Traits:</p>
         <% @characters[n].traits.each do |trait| %>
-          <p><%= trait.name %>: <%= trait.value %>; Mod: <%= trait.modifier %>; Saving Throw: <%= trait.saving_throw %></p>
+          <p><%= trait.name %>: <%= trait.value %><br>
+          Mod: <%= trait.modifier %><br>
+          Saving Throw: <%= trait.saving_throw %></p>
         <% end %>
         <p>Skills:</p>
         <% @characters[n].skills.each do |skill| %>
-          <p><%= skill.name %>: <%= skill.bonus %>; Proficient: <%= skill.proficient %></p>
+          <p><%= skill.name %>: <%= skill.bonus %><br>
+          Proficient: <%= skill.proficient %></p>
         <% end %>
       </div>
     <% end %>
