@@ -52,7 +52,7 @@ $(document).on('turbolinks:load', function() {
     get_data('backgrounds');
     // unchecks, removes, and re-enables skills
     if (old_bg != null) {
-      for (old_skill of data[$('.character_background').text()]['skills']) {
+      for (old_skill of data[old_bg]['skills']) {
         $('input[name^="skills_' + old_skill + '"]').prop('checked', false);
         $('input[name^="skills_' + old_skill + '"]').prop('disabled', false);
         skills_str = skills_str.filter(function(skill) {
