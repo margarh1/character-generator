@@ -46,12 +46,12 @@ $(document).on('turbolinks:load', function() {
     };
   });
 
-  var has_background = false;
+  var old_bg;
   $('#character_background').change(function() {
     var bg = $('#' + this.id).val();
     get_data('backgrounds');
     // unchecks, removes, and re-enables skills
-    if (has_background) {
+    if (old_bg != null) {
       for (old_skill of data[$('.character_background').text()]['skills']) {
         $('input[name^="skills_' + old_skill + '"]').prop('checked', false);
         $('input[name^="skills_' + old_skill + '"]').prop('disabled', false);
@@ -68,7 +68,7 @@ $(document).on('turbolinks:load', function() {
     };
     $('.' + this.id).text($('#' + this.id).prop('value'));
     $('.skills').text(skills_str.join(', '));
-    has_background = true;
+    old_bg = bg;
   });
 
   var old_race;
