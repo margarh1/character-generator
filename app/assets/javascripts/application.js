@@ -62,10 +62,11 @@ $(document).on('turbolinks:load', function() {
       };
     };
     // checks, disables, and adds associated skills
-    for (skill of data[bg]['skills']) {
-      $('input[name^="skills_' + skill + '"]').prop('checked', true);
-      $('input[name^="skills_' + skill + '"]').prop('disabled', true);
-      skills_str.push(skill);
+    var skills = data[bg]['skills'];
+    for (skill in skills) {
+      $('input[name^="skills_' + skills[skill] + '"]').prop('checked', true);
+      $('input[name^="skills_' + skills[skill] + '"]').prop('disabled', true);
+      skills_str.push(skills[skill]);
     };
     $('.' + this.id).text($('#' + this.id).prop('value'));
     $('.skills').text(skills_str.join(', '));
@@ -80,11 +81,12 @@ $(document).on('turbolinks:load', function() {
     get_data('races');
     // removes race modifiers from traits
     if (old_race != null) {
-      for (trait of Object.keys(data[old_race]['trait'])) {
-        var current = Number($('#' + trait).val());
-        var bonus = data[old_race]['trait'][trait];
-        $('#' + trait).val(current - bonus);
-        $('.' + trait).text($('#' + trait).val());
+      var old_race_traits = Object.keys(data[old_race]['trait']);
+      for (trait in old_race_traits) {
+        var current = Number($('#' + old_race_traits[trait]).val());
+        var bonus = data[old_race]['trait'][old_race_traits[trait]];
+        $('#' + old_race_traits[trait]).val(current - bonus);
+        $('.' + old_race_traits[trait]).text($('#' + old_race_traits[trait]).val());
       }
       if (old_race === 'Half-orc') {
         $('input[name^="skills_Intimidation"]').prop('checked', false);
@@ -96,26 +98,29 @@ $(document).on('turbolinks:load', function() {
       }
     }
     if (old_subrace != null) {
-      for (trait of Object.keys(data[old_race]['subraces'][old_subrace]['trait'])) {
-        var current = Number($('#' + trait).val());
-        var bonus = data[old_race]['subraces'][old_subrace]['trait'][trait];
-        $('#' + trait).val(current - bonus);
-        $('.' + trait).text($('#' + trait).val());
+      var old_subrace_traits = Object.keys(data[old_race]['subraces'][old_subrace]['trait']);
+      for (trait in old_subrace_traits) {
+        var current = Number($('#' + old_subrace_traits[trait]).val());
+        var bonus = data[old_race]['subraces'][old_subrace]['trait'][old_subrace_traits[trait]];
+        $('#' + old_subrace_traits[trait]).val(current - bonus);
+        $('.' + old_subrace_traits[trait]).text($('#' + old_subrace_traits[trait]).val());
       };
     };
     // adds race modifiers to traits
-    for (trait of Object.keys(data[race]['trait'])) {
-      var current = Number($('#' + trait).val());
-      var bonus = data[race]['trait'][trait];
-      $('#' + trait).val(current + bonus);
-      $('.' + trait).text($('#' + trait).val());
+    var race_traits = Object.keys(data[race]['trait']);
+    for (trait in race_traits) {
+      var current = Number($('#' + race_traits[trait]).val());
+      var bonus = data[race]['trait'][race_traits[trait]];
+      $('#' + race_traits[trait]).val(current + bonus);
+      $('.' + race_traits[trait]).text($('#' + race_traits[trait]).val());
     }
     if (subrace != null) {
-      for (trait of Object.keys(data[race]['subraces'][subrace]['trait'])) {
-        var current = Number($('#' + trait).val());
-        var bonus = data[race]['subraces'][subrace]['trait'][trait];
-        $('#' + trait).val(current + bonus);
-        $('.' + trait).text($('#' + trait).val());
+      var subrace_traits = Object.keys(data[race]['subraces'][subrace]['trait']);
+      for (trait in subrace_traits) {
+        var current = Number($('#' + subrace_traits[trait]).val());
+        var bonus = data[race]['subraces'][subrace]['trait'][subrace_traits[trait]];
+        $('#' + subrace_traits[trait]).val(current + bonus);
+        $('.' + subrace_traits[trait]).text($('#' + subrace_traits[trait]).val());
       };
     };
     if (race === 'Half-orc') {
@@ -162,8 +167,9 @@ $(document).on('turbolinks:load', function() {
     if ((name === 'character_level') && ((data[level]['exp'] >= exp) || (data[level]['exp'] <= exp))) {
       $('#character_exp').val(data[level]['exp']);
     } else if (name === 'character_exp') {
-      for (pair of Object.keys(data)) {
-        if (exp >= data[pair]['exp']) {
+      var levels = Object.keys(data);
+      for (pair in levels) {
+        if (exp >= levels[level[pair]]['exp']) {
           $('#character_level').val(pair);
         };
       };
